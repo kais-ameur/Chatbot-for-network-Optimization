@@ -1,7 +1,7 @@
 # Chatbot-for-network-Optimization
 Project : Chatbot for network Optimization assistance
 
-
+Copy project under (Chatbot directory) under C:\Users\User>
 Replace defaul path User C:\Users\User>
 
 1. Lunch CMD command
