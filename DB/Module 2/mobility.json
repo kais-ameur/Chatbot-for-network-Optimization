@@ -1,0 +1,382 @@
+[{
+  "_id": {
+    "$oid": "64494c194091063a58a1ecb9"
+  },
+  "Mobility": {
+    "options": [
+      {
+        "option": "LTE Intra Inter Frequency HOSR",
+        "options": [
+          {
+            "option": "LTE Handover Preparation Failure",
+            "Counters": "pmHoPrepAttLTEIntraF pmHoPrepSuccLTEIntraF pmHoPrepAttLTEInterF pmHoPrepSuccLTEInterF",
+            "options": [
+              {
+                "option": "HPF Neighbor cell load issue",
+                "Counters": "pmHoPrepRejInHighLoad (MP load control) pmHoPrepRejInOverload (procedure latency supervision)",
+                "Parameter": "SchedulingAlgorithm , crsGain , tPollRetransmitUl (DRB & SRB) , tPollRetransmitDl (DRB & SRB) umInitialAccessAndIncomingHo (system constant) , SpdcchLaGinrMargin (system constant) lInterferenceForgettingFactor (system constant) , deltaPsdRs2Tx (system constant ) oOfPucchCqiUsers , noOfPucchSrUsers , pdcchCfiMode",
+                "Action plan": "Check these counters on target cell , Reduce no. of HO by physical opti or features (UE Level Oscillating Handover  inimization & Automated Mobility Optimization) P capacity of DUS is higher than DUL , to increase MP capacity DUL can be replaced by DUS hysical changes (Tilt , Azimuth , height of antenna) to offload traffic from target cell ffload Target cell Load by changing Layering strategy, Idle mode cellreselection, connected mode mobility & Load alancing parameters"
+              },
+              {
+                "option": "HPF Neighbor cell License issue",
+                "options": [
+                  {
+                    "option": "pmHoPrepRejInLicMob",
+                    "Action plan": "Audit licenseState,featurestate,servicestate & other paramter related to Intra freq HO feature"
+                  },
+                  {
+                    "option": "pmHoPrepRejInLicMultiErab",
+                    "Action plan": "Audit licenseState,featurestate,servicestate & other paramter related to MultiErabsPerUser feature"
+                  },
+                  {
+                    "option": "pmHoPrepRejInLicRlcUm",
+                    "Action plan": "Audit licenseState,featurestate,servicestate & other paramter related to RlcUm feature"
+                  },
+                  {
+                    "option": "pmHoPrepRejInLicConnUsers",
+                    "Action plan": "Check licenseCapacityConnectedUsers of Target cell Also Graceperiod should be noticed to exceed the licensed capacity limits for a limited periodof timeOffload traffic from target cell"
+                  }
+                ]
+              },
+              {
+                "option": "HPF Admission reject",
+                "Counters": "pmHoPrepRejInBearerAdmissionRej",
+                "Parameter": "dlTransNwBandwidth , ulTransNwBandwidth zzzTemp20 , zzzTemp21 , pmRrcConnMax , pmRrcConnLevSum",
+                "Action plan": "Audit UE Admission Control,Bearers (SRB & DRB) Admission Control,Transport Network Admission Control & Emergency ca prioritization Physical changes (Tilt , Azimuth , height of antenna) to offload traffic from target cell"
+              },
+              {
+                "option": "HPF Configuration issue",
+                "Action plan": "Check configuration issues (especially after new site is integrated)  check MO ExternalEUtranCellFDD,EUtranCellRelation,TermPointToENB,TermPointToMme) also check config para ex. Activeplmnlist,PCI , TAC , EutranFrequencyRef , IP address of TermPointToENB & MME"
+              },
+              {
+                "option": "HPF Other checks",
+                "options": [
+                  {
+                    "option": "HPF Availability Cell down",
+                    "options": [
+                      {
+                        "option": "HPF Cell Down Auto",
+                        "options": [
+                          {
+                            "option": "HPF eNodeB Cause",
+                            "options": [
+                              {
+                                "option": "HPF Configuration issues",
+                                "Action plan": "ensure proper configuration , especially for all new site which are integrated recently"
+                              },
+                              {
+                                "option": "HPF Auto Restart",
+                                "Action plan": "Ensure the eNodeB structure of the restart, MP、Baseband or RRU lh all llog -l (do complete eNB health checkup)"
+                              },
+                              {
+                                "option": "HPF Baseband Startup issue",
+                                "Action plan": "Baseband Trace can be used , te enable all bbmcBbOmMeSwU"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "HPF Transport Cause S1 issues",
+                            "Action plan": "check for alarms like Service Unavailable(S1 connection failure"
+                          },
+                          {
+                            "option": "HPF EPC Cause",
+                            "Action plan": "check for alarms like Service Unavailable(S1 connection failure) , Ip packet loss above SGW"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "HPF Cell Down Manually",
+                        "Counters": "pmCellDowntimeMan pmCellDownLockMan",
+                        "Action plan": "Operation Cause manually locked during network configuration issues ((eg. adding/changing/removing hardware) manually locked during parameter change (eg. activate feature"
+                      }
+                    ]
+                  },
+                  {
+                    "option": "HPF HW or SW Cause",
+                    "options": [
+                      {
+                        "option": "HPF Equipment causes RRU Issue or Antenna Issue",
+                        "Action plan": "Check alarms , hardware status , reset eNB if required"
+                      },
+                      {
+                        "option": "HPF Alarms",
+                        "Action plan": "Common alarm : resource configuration disable , RRU fault , link failure , Check current & history alarms & take necessary action according to type of Alarm Check RRU status , Reset boards , Verify SW on node S1 links down due to faulty interface board. Check related alarms like Serviceunavailable (S1 connection failure,Hardware failure,GeneralHwError,GeneralSwError,Gigabit Ethernet Link Fault)"
+                      },
+                      {
+                        "option": "HPF HW issues",
+                        "Action plan": "Check HW issues , alarms , improper cabling , connector issues , DUS Board er"
+                      },
+                      {
+                        "option": "HPF SW package",
+                        "Action plan": "preparation failure will be high if there is SW package corrupt"
+                      }
+                    ]
+                  },
+                  {
+                    "option": "HPF MME pool",
+                    "Action plan": "preparation failure will be high if there is SW package corrupt"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "option": "LTE Handover Execution Failure",
+            "Counters": "pmHoExeAttLTEIntraF pmHoExeSuccLTEIntraF pmHoExeAttLTEInterF pmHoExeSuccLTEInterF",
+            "options": [
+              {
+                "option": "HEF PCI confliction or confusion",
+                "Action plan": "Audit PCI of near by sites , also check if there is overshooting cell creating conflict , OSS PCI conflicting function"
+              },
+              {
+                "option": "HEF Coverage issues",
+                "Counters": "pmBadCovEvalReport pmRadioTbsPwrRestricted pmBadCovSearchEvalReport",
+                "Parameter": "maximumTransmissionPower , partOfSectorPower confOutputPower , crsGain , pdschTypeBGain",
+                "Action plan": "Indoor coverage issue (Small cell , PICO , DOT , Hetnet) Physical changes (Tilt , Azimuth , height of antenna) Audit cell reselection parameters , Tune DL power related parameters (as mentioned beside) Check if there is scope of new site"
+              },
+              {
+                "option": "HEF Poor DL SINR CQI",
+                "Counters": "pmRadioUeRepCqiDistr , pmRadioUeRepCqiDistr2",
+                "Parameter": "maximumTransmissionPower , partOfSectorPower confOutputPower , crsGain , pdschTypeBGain",
+                "Action plan": "Tune related parameters (as mentioned beside) , Audit cell reselection parameters Physical optimization (Tilt , Azimuth , height of antenna) also Identify overshooting cells causing interference in D"
+              },
+              {
+                "option": "HEF UL RSSI",
+                "Counters": "pmRadioRecInterferencePwr pmRadioRecInterferencePwrPucch pmRadioRecInterferencePwrPrb1~100 pmSinrPucchDistr , pmSinrPuschDistr",
+                "Parameter": "pZeroNominalPucch pZeroNominalPusch",
+                "Action plan": "Check Power control parameters , Features like IRC & UL FSS can help to reduce UL interference. Check for Loose Connectors,Faulty Antenna(Tx & Rx antenna ports),VSWR alarms,Faulty TMA Connections/settings External interference (cable tv , repeaters (due to power leak issues) , airport , police communication system etc..)"
+              },
+              {
+                "option": "HEF HW issues and Alarms",
+                "options": [
+                  {
+                    "option": "HEF Alarms",
+                    "Action plan": "Alarm need to monitor , some alarms need to monitor are VswrOverThreshold , Serviceunavailable (S1 connection failure) , Gigabit Ethernet Link Fau"
+                  },
+                  {
+                    "option": "HEF Availability",
+                    "options": [
+                      {
+                        "option": "HEF Cell down",
+                        "options": [
+                          {
+                            "option": "HEF Cell Down Auto",
+                            "options": [
+                              {
+                                "option": "HEF eNodeB Cause",
+                                "options": [
+                                  {
+                                    "option": "HEF Configuration issues",
+                                    "Action plan": "ensure proper configuration , especially for all new site which are integrated recently"
+                                  },
+                                  {
+                                    "option": "HEF Auto Restart",
+                                    "Action plan": "Ensure the eNodeB structure of the restart, MP、Baseband or RRU lh all llog -l (do complete eNB health checkup)"
+                                  },
+                                  {
+                                    "option": "HEF Baseband Startup issue",
+                                    "Action plan": "Baseband Trace can be used , te enable all bbmcBbOmMeSwU"
+                                  }
+                                ]
+                              },
+                              {
+                                "option": "HEF Transport Cause S1 issues",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure"
+                              },
+                              {
+                                "option": "HEF EPC Cause",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure) , Ip packet loss above SGW"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "HEF Cell down Manually",
+                            "Counters": "pmCellDowntimeMan pmCellDownLockMan",
+                            "Action plan": "Operation Cause manually locked during network configuration issues ((eg. adding/changing/removing hardware) manually locked during parameter change (eg. activate feature)"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "HEF Sleeping cell",
+                        "Counters": "pmRaAttCbra , pmRaSuccCbra , pmRaFailCbraMsg2Disc  pmRaAttCfra , pmRaSuccCfra , pmRaFailCfraMsg2Disc pmRaAllocCfra , pmRrcConnEstabAtt , pmRrcConnSucc",
+                        "Action plan": "Verify symtoms for sleeping cell"
+                      },
+                      {
+                        "option": "HEF Non-access issue",
+                        "options": [
+                          {
+                            "option": "HEF Configuration issue",
+                            "options": [
+                              {
+                                "option": "HEF Power setting issue",
+                                "Action plan": "Check SectorEquipmentFunction:ConfiguredOutputPower & EutrancellFDD:partOfSectorPower"
+                              },
+                              {
+                                "option": "HEF Idle mode parameter issue",
+                                "Action plan": "Check EutrancellFDD MO cell selection and reselection parameters & 3G&2G cell reselection parameter/featur"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "HEF Operation issues",
+                            "options": [
+                              {
+                                "option": "HEF Cell Barred",
+                                "Action plan": "Check Cell Barred , acBarring for different scenarios"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "option": "HEF HW issues",
+                    "Action plan": "Check HW issues , alarms , improper cabling , connector issues , DUS Board error"
+                  }
+                ]
+              },
+              {
+                "option": "HEF Target cell RACH issue",
+                "Counters": "pmRaAttCfra , pmRaSuccCfra",
+                "Parameter": "preambleInitialReceivedTargetPower , cellrange powerRampingStep (Hardcoded) , preambleTransMax (Hardcoded) numberOfRA-Preambles (Hardcoded)",
+                "Action plan": "Tune RACH related parameters , also check symptoms for sleeping cell (mentioned below) Improve RF conditions (by parameters or physical optimization (tilt/azimuth/antenna height)"
+              },
+              {
+                "option": "HEF Wrong neighbour CM cross-check",
+                "Action plan": "EUtranCellRelation ExternalEUtranCellFDD"
+              }
+            ]
+          },
+          {
+            "option": "HEF Other imp checks",
+            "options": [
+              {
+                "option": "HEF Tune HO related parameters",
+                "options": [
+                  {
+                    "option": "HEF Intra LTE",
+                    "Action plan": "cellIndividualOffsetEUtran ; a3offset ; hysteresisA3 ; timeToTriggerA3 , isHoAllowed , filterCoefficientEUtraRsrp , sMeasure"
+                  },
+                  {
+                    "option": "HEF Inter freq LTE",
+                    "Action plan": "a5Threshold1RSRP ; a5Threshold2RSRP ; hysteresisA5 ; timeToTriggerA5 , a2ThresholdRsrpPrim , timeToTriggerA2Prim , hysteresisA2Prim"
+                  }
+                ]
+              },
+              {
+                "option": "HEF Transport nw Issue",
+                "Action plan": "TN Outage / Flicker Alarm , S1 or X2 interfaces DOWN (Transport Resource Unavailable) , Also check 3G collocated nodeb in term of SCTP LOSS , TN & SGW alarm chec"
+              },
+              {
+                "option": "HEF EPC Cause MME configuration",
+                "Action plan": "Missing / Incorrect TA list , MME configuration chec"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "option": "Inter-f load balancing",
+        "Counters": "pmHoExeAttLteInterFLb , pmHoExeSuccLteInterFLb pmHoPrepAttLteInterFLb , pmHoPrepSuccLteInterFLb",
+        "Parameter": "qciSubscriptionQuanta , lbThreshold , lbCeiling , hysteresisA5 cellSubscriptionCapacity , a5Threshold1Rsrp , a5Threshold2Rsrp",
+        "options": [
+          {
+            "option": "Inter-f Highload",
+            "Action plan": "RRC Connected user Traffic volume related counters"
+          },
+          {
+            "option": "Inter-f Configuration",
+            "Action plan": "Check eNodeB configuration"
+          },
+          {
+            "option": "Inter-f Connected mode priority",
+            "Action plan": "Check eNodeB configuration"
+          }
+        ]
+      },
+      {
+        "option": "Session Continuity",
+        "options": [
+          {
+            "option": "LTE Inter Frequency Session Continuity",
+            "Counters": "pmUeCtxtRelSCEutra",
+            "Parameter": "a2ThresholdRsrpPrim ,hysteresisA2Prim , timeToTriggerA2Prim , a5B2MobilityTimer",
+            "Action plan": "Coverage of target freq is poor , Tune parameters below to control SC"
+          },
+          {
+            "option": "Inter RAT Session continuity",
+            "Counters": "pmUeCtxtRelSCWcdma",
+            "Parameter": "a2ThresholdRsrpPrim ,hysteresisA2Prim , timeToTriggerA2Prim , a5B2MobilityTimer",
+            "Action plan": "Coverage of target RAT is poor , Tune parameters below to control SC"
+          }
+        ]
+      },
+      {
+        "option": "MCPC",
+        "Counters": "pmCriticalBorderEvalReport pmBadCovSearchEvalReport",
+        "Parameter": "a1a2SearchThresholdRsrp , hysteresisA1A2SearchRsrp , searchEffortTime timeToTriggerA1Search , timeToTriggerA2Search , a2CriticalThresholdRsrp hysteresisA2CriticalRsrp , timeToTriggerA2Critical , zzzTemporary13 , zzzTemporary14",
+        "Action plan": "Tune parameters according to number of carriers in LTE"
+      },
+      {
+        "option": "IRAT IRAT Handover HOSR",
+        "options": [
+          {
+            "option": "IRAT Handover Preparation Failure",
+            "Counters": "pmHoPrepAtt pmHoPrepSucc",
+            "Parameter": "b2Threshold1Rsrp , b2Threshold2RscpUtra , hysteresisB2 , timeToTriggerB2 , triggerQuantityB2a2ThresholdRsrpPrim ,hysteresisA2Prim timeToTriggerA2Prim , a5B2MobilityTimer",
+            "options": [
+              {
+                "option": "IRAT Target Cell Availability",
+                "Action plan": "target site is disabled / sector down / software package corrupt"
+              },
+              {
+                "option": "IRAT Configuration issue",
+                "Action plan": "Frequency relation (UtranFreqRelation) , neighbor relation (ExternalUtrancell)"
+              },
+              {
+                "option": "IRAT EPC Cause",
+                "Action plan": "Check EPC configuration"
+              },
+              {
+                "option": "IRAT Target cell load",
+                "Action plan": "Check load & admission control parameter of legacy network"
+              },
+              {
+                "option": "IRAT Tune parameters",
+                "Action plan": "Audit beside mentioned parameters for IRAT HO"
+              },
+              {
+                "option": "IRAT HW issues",
+                "Action plan": "Check HW issues , alarms , improper cabling , connector issues , VSWR"
+              }
+            ]
+          },
+          {
+            "option": "IRAT Handover Execution Failure",
+            "Counters": "pmHoExeAtt pmHoExeSucc",
+            "Parameter": "b2Threshold1Rsrp , b2Threshold2RscpUtra , hysteresisB2 , timeToTriggerB2 , triggerQuantityB2 a2ThresholdRsrpPrim ,hysteresisA2Prim timeToTriggerA2Prim , a5B2MobilityTimer",
+            "options": [
+              {
+                "option": "IRAT Poor Coverage",
+                "Action plan": "Check target cell Coverage area (legacy network)"
+              },
+              {
+                "option": "IRAT Target cell High UL interference",
+                "Action plan": "Check interference issues in target cell"
+              },
+              {
+                "option": "IRAT Wrong neighbour",
+                "Action plan": "Check configuration parameter of neighbor cell"
+              },
+              {
+                "option": "IRAT HEF HW issues",
+                "Action plan": "Check HW issues , alarms , improper cabling , connector issues , VSWR"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}]

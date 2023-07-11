@@ -1,0 +1,523 @@
+[{
+  "_id": {
+    "$oid": "644954374091063a58a1ecbb"
+  },
+  "Integrity": {
+    "options": [
+      {
+        "option": "Throughput",
+        "options": [
+          {
+            "option": "DL Throughput",
+            "Counters": "pmPdcpVolDlDrbLastTti , pmSchedActivityCellD pmPdcpVolDlDrbQci , pmPdcpVolDlSrb",
+            "options": [
+              {
+                "option": "DL Radio Cause",
+                "options": [
+                  {
+                    "option": "DL Transmission Mode",
+                    "Parameter": "transmission Mode , pdcchCfiMode , dlChannelBandwidth ulChannelBandwidth , noOfTxAntennas , noOfRxAntenna",
+                    "Action plan": "Check noOfUsedTxAntennas , transmissionMode (TM2/TM3/TM7 selection) & SC125 to confirm the Transmission Mode Check featurestateDualAntDlPerfPkg"
+                  },
+                  {
+                    "option": "DL Poor Coverage",
+                    "Counters": "pmBadCovEvalReport , pmRadioTbsPwrRestricted pmBadCovSearchEvalReport",
+                    "Parameter": "maximumTransmissionPower , partOfSectorPowe confOutputPower , crsGain , pdschTypeBGain",
+                    "Action plan": "Indoor coverage issue (Small cell , PICO , DOT , Hetnet) ; Physical changes (Tilt , Azimuth , height of antenna) Audit cell reselection parameters , Tune DL power related parameters ; Check if there is scope of new site"
+                  },
+                  {
+                    "option": "DL Poor DL SINR CQI",
+                    "Counters": "pmRadioUeRepCqiDistr , pmRadioUeRepCqiDistr",
+                    "Parameter": "maximumTransmissionPower , partOfSectorPowe confOutputPower , crsGain , pdschTypeBGain",
+                    "Action plan": "Tune related parameters (as mentioned beside) , Audit cell reselection parameters Physical optimization (Tilt , Azimuth , height of antenna) also Identify overshooting cells causing interference"
+                  },
+                  {
+                    "option": "DL UL RSSI",
+                    "Counters": "pmRadioRecInterferencePwr pmRadioRecInterferencePwrPucch pmRadioRecInterferencePwrPrb1~10 pmSinrPucchDistr , pmSinrPuschDistr",
+                    "Parameter": "pZeroNominalPucch pZeroNominalPusch",
+                    "Action plan": "Check Power control parameters , Features like IRC & UL FSS can help to reduce UL interference. Check for Loose Connectors,Faulty Antenna(Tx & Rx antenna ports),VSWR alarms,Faulty TMA Connections/settings. External interference (cable tv , repeaters (due to power leak issues) , airport , police communication system etc)"
+                  },
+                  {
+                    "option": "DL Low assignable bits data in DL buffer to schedule UE",
+                    "options": [
+                      {
+                        "option": "pmPrbUtilD",
+                        "Action plan": "If UE is sending with high CQI(in the range 10-15) and RI=2 but Throughput is still very low, then check assignable bits High MCS but low number of PRBs (under many users cases , so that more users can be scheduled)"
+                      },
+                      {
+                        "option": "pmRlcArqDlAck",
+                        "Action plan": "ACK_SN should be increasing, otherwise RLC buffers are not released NACK_SN indicates RLC retransmissions (occasionally is OK)"
+                      }
+                    ]
+                  },
+                  {
+                    "option": "DL CCE Allocation or CFI mode",
+                    "Counters": "pmPdcchCceUtil , pmPdcchCfiUtil , pdcchcfimod",
+                    "Action plan": "check if there is lack CCE for DL assignment"
+                  },
+                  {
+                    "option": "DL Retransmission",
+                    "options": [
+                      {
+                        "option": "DL HARQ retransmission",
+                        "Counters": "pmMacHarqDlAckQpsk , pmMacHarqDlAck16qam , pmMacHarqDlAck64qam pmMacHarqDlNackQpsk , pmMacHarqDlNack16qam , pmMacHarqDlNack64qa",
+                        "Action plan": "NACK ratio should be low"
+                      },
+                      {
+                        "option": "DL RLC retransmission",
+                        "Counters": "pmRlcArqDlNack , pmRlcArqDlAc",
+                        "Parameter": "dlMaxRetxThreshold",
+                        "Action plan": "NACK ratio should be low"
+                      }
+                    ]
+                  },
+                  {
+                    "option": "DL Rank Indicator RI",
+                    "Counters": "pmRadioTxRankDistr",
+                    "Parameter": "noOfUsedTxAntenna , noOfRxAntennas , TM confi",
+                    "Action plan": "1 - SIMO ; 2 - MIMO ; high samples should be of rank 2"
+                  },
+                  {
+                    "option": "DL modulation ratio",
+                    "Counters": "pmMacHarqDlAckQpsk , pmMacHarqDlAck16qam , pmMacHarqDlAck64qa"
+                  },
+                  {
+                    "option": "DL Scheduling algorithm",
+                    "Counters": "pmSchedActivityCellDl , pmSchedActivityUeDl , pmActiveDrbDlSum",
+                    "Parameter": "SchedulingAlgorithm",
+                    "Action plan": "Proportional Fair High/ Medium/ Low and Resource Fai"
+                  },
+                  {
+                    "option": "DL Other imp counters",
+                    "Counters": "pmPrbUtilDl pmRrcConnMax",
+                    "Parameter": "tInactivityTimer , dlChannelBandwidth , pdcchCfiMode qOffsetcellEUtran , qRxLevMin , noOfPucchCqiUsers noOfPucchSrUsers , pdcchCfiMode , SchedulingAlgorithm",
+                    "Action plan": "Dl Throughput would reduce with increase in number of connected users , High PRB and PDCCH utilization would impact the DL Throughpu Traffic offload to less utilized neighboring cells , Reduce control channel resources(Before that check PDCCH utilization) Add BW (if system is operating < 20Mhz) as BW increase would increase number of PRB , Reduce inactivity timer (tInactivityTimer)"
+                  },
+                  {
+                    "option": "DL Important features",
+                    "Action plan": "Channel Bandwidth , 64-QAM DL , MIMO ; for UL - interference rejection combining , Ul frequency selective scheduling"
+                  }
+                ]
+              },
+              {
+                "option": "DL eNB configurations",
+                "options": [
+                  {
+                    "option": "DL RF BW",
+                    "Parameter": "dlchannelBW",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "DL Frame Config",
+                    "Parameter": "subframeAssignment , frameStartOffset , specialSubframePattern"
+                  },
+                  {
+                    "option": "DL No of Tx antenna",
+                    "Parameter": "noOfUsedTxAntenna , noOfRxAntenna",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "DL TM config",
+                    "Parameter": "TM2/TM3/TM7/TM8",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "DL CFI config",
+                    "Parameter": "pdcchcfimode",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "DL RF power",
+                    "Parameter": "onfigoutputpower , maxtransmissionpower , partofradiopower , Pa Pb setti",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "DL MAC config",
+                    "Parameter": "d&ulMaxHARQTx , tPeriodicBSR&PHRTimer , tTimeAlignmentTim",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "DL RLC config",
+                    "Parameter": "retrans and poll timer",
+                    "Action plan": "Verify parameter settings are correct"
+                  }
+                ]
+              },
+              {
+                "option": "DL Drive test setup or settings",
+                "options": [
+                  {
+                    "option": "DL Server settings",
+                    "Action plan": "FTP/UDP server configuration ; Iperf (UDP&TCP) (employ 1360 not 1470 to prevent fregmentation"
+                  },
+                  {
+                    "option": "DL End user PC settings",
+                    "Action plan": "Laptop processor , memory etc. can impact THP ; MTU setting in PC (bigger to prevent fregmentation) ; TCP setting (TCP windows size, etc)"
+                  }
+                ]
+              },
+              {
+                "option": "DL UE CATEGORY or SUBSCRIPTION",
+                "Action plan": "UE subscription defined in EPC and USIM"
+              },
+              {
+                "option": "DL HW issues and Alarms",
+                "options": [
+                  {
+                    "option": "DL Availability",
+                    "options": [
+                      {
+                        "option": "DL Cell down",
+                        "options": [
+                          {
+                            "option": "DL Cell Down Auto",
+                            "options": [
+                              {
+                                "option": "DL eNodeB Cause",
+                                "options": [
+                                  {
+                                    "option": "DL Configuration issues",
+                                    "Action plan": "ensure proper configuration , especially for all new site which are integrated recently"
+                                  },
+                                  {
+                                    "option": "DL Auto Restart",
+                                    "Action plan": "Ensure the eNodeB structure of the restart, MP、Baseband or RRU lh all llog -l (do complete eNB health checkup)"
+                                  },
+                                  {
+                                    "option": "DL Baseband Startup issue",
+                                    "Action plan": "Baseband Trace can be used , te enable all bbmcBbOmMeSwU"
+                                  }
+                                ]
+                              },
+                              {
+                                "option": "DL Transport Cause S1 issues",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure)"
+                              },
+                              {
+                                "option": "DL EPC Cause",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure) , Ip packet loss above SGW"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "DL Cell Down Manually",
+                            "Counters": "pmCellDowntimeMan pmCellDownLockMan",
+                            "Action plan": "Operation Cause manually locked during network configuration issues ((eg. adding/changing/removing hardware manually locked during parameter change (eg. activate feature)"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "DL Sleeping Cell",
+                        "options": [
+                          {
+                            "option": "DL Trace(Baseband)",
+                            "Action plan": "trace from MSG1 to MSG5 , verify symtoms for sleeping cells"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "DL Non-access issue",
+                        "options": [
+                          {
+                            "option": "DL Configuration issue",
+                            "options": [
+                              {
+                                "option": "DL Power setting issue",
+                                "Action plan": "Check SectorEquipmentFunction:ConfiguredOutputPower & EutrancellFDD:partOfSectorPower"
+                              },
+                              {
+                                "option": "DL Idle mode parameter issue",
+                                "Action plan": "Check EutrancellFDD MO cell selection and reselection parameters & 3G&2G cell reselection parameter/featur"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "DL Operation issues",
+                            "options": [
+                              {
+                                "option": "DL Cell Barred",
+                                "Action plan": "Check Cell Barred , acBarring for different scenarios"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "option": "DL Alarms",
+                    "Action plan": "Alarm need to monitor , some alarms need to monitor are VswrOverThreshold , Serviceunavailable (S1 connection failure) , Gigabit Ethernet Link Fau"
+                  },
+                  {
+                    "option": "DL HW issues",
+                    "Action plan": "Check HW issues , alarms , improper cabling , connector issues , DUS Board erro"
+                  }
+                ]
+              },
+              {
+                "option": "DL EPC Setting",
+                "Action plan": "check HSS user subscription and default QoS profile ; PCRF Dynamic QoS profile PGW enforce APN-AMBR , UE-AMBR and bearer-AMBR ; SGW handle DL data buffer and forwarding"
+              },
+              {
+                "option": "DL Transport Network setting",
+                "Action plan": "Check TN BW capacity ,check IUB CAPACITY ALLOCATION trend also on 3G colocate ; Check MTU size setting (bigger size to prevent fregmentation) DU GE port setting - actualspeedduplex (if half- duplex, it could be problem of auto-negotiation) ; dscpPbitMap (Qos mapping from L3 to L2) TN packet discard/loss - Check MO ipaccesshostet, ipinterface, gigabitethernet etc. counter ; Can use Iperf to check the transport BW"
+              }
+            ]
+          },
+          {
+            "option": "UL Throughput",
+            "Counters": "pmUeThpVolUl , pmUeThpTimeU pmSchedActivityCellUl",
+            "options": [
+              {
+                "option": "UL Radio Cause",
+                "options": [
+                  {
+                    "option": "UL Power Headroom",
+                    "Parameter": "pZeroNominalPusch",
+                    "Action plan": "Power Headroom values less than 0 can be considered the UE is power limited , When a UE is power limited, the eNB may schedule fewer PRBs to reduce the required output power of the UE, which reduce throughpu pZeroNominalPusch too high causing UE to exceed maximum transmit power (tune parameter"
+                  },
+                  {
+                    "option": "UL Buffer Status",
+                    "Action plan": "Buffer Status Report (BSR) is used to inform eNB of data waiting for transmission in the UE If low/No data is waiting for transmission UL throughput will be low ; also Low values indicate UE/laptop problem"
+                  },
+                  {
+                    "option": "UL rxPower too low",
+                    "Parameter": "pZeroNominalPusch",
+                    "Action plan": "pZeroNominalPusch too low , can cause to transmitt low power"
+                  },
+                  {
+                    "option": "UL PDCCH SIB scheduling colliding with UL gran",
+                    "Action plan": "PDCCH carries both the UL (PUSCH) assignment and DL (PDSCH) assignment. If many PDCCH CCEs are used for DL transmission (e.g. SIB with 8 CCEs) it may be that UL grant is not possible to be scheduled in this TTI for a single UE"
+                  },
+                  {
+                    "option": "UL Poor Coverage",
+                    "Counters": "pmBadCovEvalReport , pmRadioTbsPwrRestricted pmBadCovSearchEvalReport",
+                    "Parameter": "maximumTransmissionPower , partOfSectorPowe confOutputPower , crsGain , pdschTypeBGain",
+                    "Action plan": "Indoor coverage issue (Small cell , PICO , DOT , Hetnet) ; Physical changes (Tilt , Azimuth , height of antenna) Audit cell reselection parameters , Tune DL power related parameters (as mentioned beside) ; at last Check if there is scope of new site"
+                  },
+                  {
+                    "option": "UL RSSI",
+                    "Counters": "pmRadioRecInterferencePwr pmRadioRecInterferencePwrPucch pmRadioRecInterferencePwrPrb1~10 pmSinrPucchDistr , pmSinrPuschDistr",
+                    "Parameter": "pZeroNominalPucch pZeroNominalPusch",
+                    "Action plan": "Check Power control parameters , Features like IRC & UL FSS can help to reduce UL interference. Check for Loose Connectors,Faulty Antenna(Tx & Rx antenna ports),VSWR alarms,Faulty TMA Connections/settings. External interference (cable tv , repeaters (due to power leak issues) , airport , police communication system etc..)"
+                  },
+                  {
+                    "option": "UL modulation ratio",
+                    "Counters": "pmMacHarqUlSuccQpsk/PmMacHarqUlSucc16qam"
+                  },
+                  {
+                    "option": "UL Scheduling algorithm",
+                    "Counters": "pmSchedActivityCellUl , pmSchedActivityUeUl , pmActiveDrbUlSum",
+                    "Parameter": "SchedulingAlgorithm",
+                    "Action plan": "Proportional Fair High/ Medium/ Low and Resource Fai"
+                  },
+                  {
+                    "option": "UL Other imp counters",
+                    "Counters": "pmPrbUtilUl",
+                    "Parameter": "ulChannelBandwidth , noOfPucchCqiUsers , noOfPucchSrUsers SchedulingAlgorithm , tInactivityTimer , qOffsetcellEUtran , qRxLevM",
+                    "Action plan": "High PRB utilization would impact the UL Throughput , Traffic offload to less utilized neighboring cells Add Bandwidth (if system is operating < 20Mhz) as Bandwidth increase would increase number of PRB , Reduce inactivity timer (tInactivityTime)"
+                  },
+                  {
+                    "option": "UL Important features",
+                    "Action plan": "Channel Bandwidth , 16-QAM UL , interference rejection combining , Ul frequency selective scheduling"
+                  }
+                ]
+              },
+              {
+                "option": "UL eNB configurations",
+                "options": [
+                  {
+                    "option": "UL RF BW",
+                    "Parameter": "ulchannelBW",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "UL Frame Config",
+                    "Parameter": "subframeAssignment , frameStartOffset , specialSubframePatter"
+                  },
+                  {
+                    "option": "UL Power control",
+                    "Parameter": "p0norminalPUSCH , p0norminalPUCCH",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "UL MAC config",
+                    "Parameter": "d&ulMaxHARQTx , tPeriodicBSR&PHRTimer , tTimeAlignmentTim",
+                    "Action plan": "Verify parameter settings are correct"
+                  },
+                  {
+                    "option": "UL RLC config",
+                    "Parameter": "retrans and poll timer",
+                    "Action plan": "Verify parameter settings are correct"
+                  }
+                ]
+              },
+              {
+                "option": "UL Drive test setup or settings",
+                "options": [
+                  {
+                    "option": "UL Server settings",
+                    "Action plan": "FTP/UDP server configuration ; Iperf (UDP&TCP) (employ 1360 not 1470 to prevent fregmentation"
+                  },
+                  {
+                    "option": "UL End user PC setting",
+                    "Action plan": "Laptop processor , memory etc. can impact THP ; MTU setting in PC (bigger to prevent fregmentation) ; TCP setting (TCP windows size, etc)"
+                  }
+                ]
+              },
+              {
+                "option": "UL UE CATEGORY or SUBSCRIPTION",
+                "Action plan": "UE subscription defined in EPC and USIM"
+              },
+              {
+                "option": "UL HW issues and  Alarms",
+                "options": [
+                  {
+                    "option": "UL Alarms",
+                    "Action plan": "Alarm need to monitor , some alarms need to monitor are VswrOverThreshold , Serviceunavailable (S1 connection failure) , Gigabit Ethernet Link Fau"
+                  },
+                  {
+                    "option": "UL Availability",
+                    "options": [
+                      {
+                        "option": "UL Cell down",
+                        "options": [
+                          {
+                            "option": "UL Cell Down Auto",
+                            "options": [
+                              {
+                                "option": "UL eNodeB Cause",
+                                "options": [
+                                  {
+                                    "option": "UL Configuration issues",
+                                    "Action plan": "ensure proper configuration , especially for all new site which are integrated recently"
+                                  },
+                                  {
+                                    "option": "UL Auto Restart",
+                                    "Action plan": "Ensure the eNodeB structure of the restart, MP、Baseband or RRU lh all llog -l (do complete eNB health checkup)"
+                                  },
+                                  {
+                                    "option": "UL Baseband Startup issue",
+                                    "Action plan": "Baseband Trace can be used , te enable all bbmcBbOmMeSwU"
+                                  }
+                                ]
+                              },
+                              {
+                                "option": "UL Transport Cause S1 issues",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure)"
+                              },
+                              {
+                                "option": "uL EPC Cause",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure) , Ip packet loss above SGW"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "UL Cell Down Manually",
+                            "Counters": "pmCellDowntimeMan pmCellDownLockMan",
+                            "Action plan": "Operation Cause manually locked during network configuration issues ((eg. adding/changing/removing hardware manually locked during parameter change (eg. activate feature)"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "UL Sleeping Cell",
+                        "Counters": "pmRaAttCbra , pmRaSuccCbra , pmRaFailCbraMsg2Disc pmRaAttCfra , pmRaSuccCfra , pmRaFailCfraMsg2Disc pmRaAllocCfra , pmRrcConnEstabAtt , pmRrcConnSucc",
+                        "Action plan": "Verify symtoms for sleeping cell Catch Trace(Baseband) trace from MSG1 to MSG5 , verify symtoms for sleeping cells"
+                      },
+                      {
+                        "option": "UL Non-access issue",
+                        "options": [
+                          {
+                            "option": "UL Configuration issue",
+                            "options": [
+                              {
+                                "option": "UL Power setting issue",
+                                "Action plan": "Check SectorEquipmentFunction:ConfiguredOutputPower & EutrancellFDD:partOfSectorPower"
+                              },
+                              {
+                                "option": "UL Idle mode parameter issue",
+                                "Action plan": "Check EutrancellFDD MO cell selection and reselection parameters & 3G&2G cell reselection parameter/featur"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "UL Operation issues",
+                            "options": [
+                              {
+                                "option": "UL Cell Barred",
+                                "Action plan": "Check Cell Barred , acBarring for different scenarios"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "option": "UL EPC Setting",
+                "Action plan": "check HSS user subscription and default QoS profile ; PCRF Dynamic QoS profile PGW enforce APN-AMBR , UE-AMBR and bearer-AMBR ; SGW handle DL data buffer and forwarding"
+              },
+              {
+                "option": "UL Transport Network setting",
+                "Action plan": "Check TN BW capacity ,check IUB CAPACITY ALLOCATION trend also on 3G colocate ; Check MTU size setting (bigger size to prevent fregmentation) DU GE port setting - actualspeedduplex (if half- duplex, it could be problem of auto-negotiation) ; dscpPbitMap (Qos mapping from L3 to L2) TN packet discard/loss - Check MO ipaccesshostet, ipinterface, gigabitethernet etc. counter ; Can use Iperf to check the transport BW"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "option": "Latency",
+        "options": [
+          {
+            "option": "U-Plane Latency",
+            "Counters": "pmPdcpLatTimeDl pmPdcpLatPktTransDl",
+            "Action plan": "UE processing time(1.5ms) ; TTI duration(1ms) HARQ retransmission(0~0.8ms) ; eNodeB processing(1.5ms"
+          },
+          {
+            "option": "C-Plane Latency",
+            "options": [
+              {
+                "option": "UE Trace Random Access delay",
+                "Action plan": "Wait for RACH scheduling(0.5ms) ; Preamble(1ms) eNodeB processing and grand(3ms) ; UE processing(5ms"
+              },
+              {
+                "option": "RRC Signalling RRC Connection Request to RRC Connection Setup Complete",
+                "Action plan": "RRC Connection Setup delay RRC request(1ms) ; eNodeB processing(4ms) RRC setup(1ms) ; UE processing(12ms) ; RRC setup complete(1ms"
+              },
+              {
+                "option": "NAS Signalling Attach Request to Attach Complete",
+                "options": [
+                  {
+                    "option": "NAS Radio Cause",
+                    "Action plan": "UE processing(16ms) ; eNodeB processing(4ms"
+                  },
+                  {
+                    "option": "NAS EPC Cause",
+                    "Action plan": "NAS service and process delay Parallel processing of NAS request at eNodeB+MME(0ms) ; NAS setup(1.5ms"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "option": "Packet Loss",
+        "options": [
+          {
+            "option": "DL Packet Loss Rate",
+            "Counters": "pmPdcpPktDiscDlPelr , pmPdcpPktDiscDlPelrUu pmPdcpPktDiscDlHo , pmPdcpPktReceivedDl , pmPdcpPktFwd",
+            "Action plan": " Packet Forwarding at S1 Handover feature can help to reduce DL packet loss eNodeB trace need to be analysed for detailed analysis Wireshark analysis need to be done for detailed analysis"
+          },
+          {
+            "option": "UL Packet Loss Rate",
+            "Counters": "pmPdcpPktLostUl pmPdcpPktReceivedUl",
+            "Action plan": "Wireshark analysis need to be done for detailed analysis eNodeB trace need to be analysed for detailed analysis"
+          }
+        ]
+      }
+    ]
+  }
+}]

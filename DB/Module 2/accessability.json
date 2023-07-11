@@ -1,0 +1,415 @@
+[{
+  "_id": {
+    "$oid": "6448ee2f4091063a58a1ecb7"
+  },
+  "Accessability": {
+    "options": [
+      {
+        "option": "Random Access",
+        "options": [
+          {
+            "option": "Contention Based random Access CBRA",
+            "Counters": "pmRaAttCbra , pmRaSuccCbra pmRaFailCbraMsg2Disc , pmRaFailCbraMsg1DiscOoc pmRaFailCbraMsg1DiscSched",
+            "Parameter": "rachRootSequence , cellRange qRxLevMin , preambleInitialReceivedTargetPower powerRampingStep (Hardcoded) , preambleTransMax (Hardcoded) numberOfRA-Preambles (Hardcoded)",
+            "Action plan": "Improve RF conditions (by parameters or physical optimization (tilt/azimuth/antenna height)), Check RSI planning (ex. For 15km cell range, diff of 10 between 2 neighbours), Tune RACH related parameters , also check symptoms for sleeping cell (mentioned below)"
+          },
+          {
+            "option": "Contension Free Random Access CFRA",
+            "Counters": "pmRaAttCfra pmRaSuccCfra pmRaFailCfraMsg2Disc pmRaAllocCfra pmRaUnassignedCfraFalse pmRaUnassignedCfraSum pmRaFailCfraMsg1DiscOoc pmRaFailCfraMsg1DiscSched ",
+            "Parameter": "rachRootSequence , cellRange qRxLevMin , preambleInitialReceivedTargetPower powerRampingStep (Hardcoded) , preambleTransMax (Hardcoded) numberOfRA-Preambles (Hardcoded) ",
+            "Action plan": "Improve RF conditions (by parameters or physical optimization (tilt/azimuth/antenna height)) Check RSI planning (ex. For 15km cell range, diff of 10 between 2 neighbours) Tune RACH related parameters , also check symptoms for sleeping cell (mentioned below)"
+          }
+        ]
+      },
+      {
+        "option": "SSSR Session setup success rate",
+        "Counters": "pmRrcConnEstabAtt (pmRrcConnEstabAttDta , pmRrcConnEstabAttEm pmRrcConnEstabAttHpa , pmRrcConnEstabAttMod pmRrcConnEstabAttMos , pmRrcConnEstabAttMta) pmRrcConnEstabAttReatt (pmRrcConnEstabAttReattDta , pmRrcConnEstabAttReattEm pmRrcConnEstabAttReattHpa , pmRrcConnEstabAttReattMod pmRrcConnEstabAttReattMos , pmRrcConnEstabAttReattMta) pmRrcConnEstabSucc (pmRrcConnEstabSuccDta , pmRrcConnEstabSuccEm pmRrcConnEstabSuccHpa , pmRrcConnEstabSuccMod pmRrcConnEstabSuccMos , pmRrcConnEstabSuccMta)",
+        "options": [
+          {
+            "option": "RRC connection",
+            "options": [
+              {
+                "option": "RRC Capacity cause",
+                "options": [
+                  {
+                    "option": "RRC MP load",
+                    "Counters": "pmRrcConnEstabFailHighLoad (MP load control) pmRrcConnEstabFailOverload (procedure latency supervision) pmRrcConnMax , pmRrcConnLevSum pmProcessorCoreLoad , pmProcessorLoad pmProcessorLoadDistr ",
+                    "Parameter": "noOfPucchCqiUsers , noOfPucchSrUsers , pdcchCfiMode tInactivityTimer , dlMaxRetxThreshold , ulMaxRetxThreshold qOffsetcellEUtran , qRxLevMin , SchedulingAlgorithm , crsGain tPollRetransmitUl (DRB & SRB) , tPollRetransmitDl (DRB & SRB) numInitialAccessAndIncomingHo (system constant) , SpdcchLaGinrMargin (system constant) ulInterferenceForgettingFactor (system constant) , deltaPsdRs2Tx (system constant )  ",
+                    "Action plan": "Tune parameters as mentioned beside. Physical changes (Tilt , Azimuth , height of antenna) Reduce size of TA , reduces no. of cells being paged so reduces the CPU load in the MP. MP capacity of DUS is higher than DUL , to increase MP capacity DUL can be replaced by DUS Reduce no. of HO by physical opti or features (UE Level Oscillating Handover Minimization & Automated Mobility Optimization Tune cell reselection parameters to offload traffic to nearby cells  "
+                  },
+                  {
+                    "option": "RRC License",
+                    "options": [
+                      {
+                        "option": "pmRrcConnEstabFailActiveUserLicenseExceeded",
+                        "Counters": "pmActiveUeDlSum pmActiveUeDlSectorCarrierDistr pmActiveUeDlMax pmActiveUeDlSumQci pmActiveUeUlSum pmActiveUeUlMax pmActiveUeUlSectorCarrierDistr pmActiveUeUlSumLcg",
+                        "Parameter": "noOfPucchCqiUsers , noOfPucchSrUsers , pdcchCfiMode tInactivityTimer , dlMaxRetxThreshold , ulMaxRetxThreshold qOffsetcellEUtran , qRxLevMin , SchedulingAlgorithm , crsGain",
+                        "Action plan": "Tune parameters mentioned aside Physical changes (Tilt , Azimuth , height of antenna) Tune cell reselection parameters to offload traffic to nearby cells"
+                      },
+                      {
+                        "option": "pmRrcConnEstabFailLic",
+                        "Counters": "pmLicConnectedUsersLicense , pmLicConnectedUsersTimeCong pmLicConnectedUsersHardLimit , pmLicConnectedUsersActual pmLicConnectedUsersDistr",
+                        "Parameter": "noOfPucchCqiUsers , noOfPucchSrUsers , pdcchCfiMode tInactivityTimer , dlMaxRetxThreshold , ulMaxRetxThreshold qOffsetcellEUtran , qRxLevMin , SchedulingAlgorithm , crsGain",
+                        "Action plan": "Upgrade license for number of connected users Physical changes (Tilt , Azimuth , height of antenna) Tune parameters as mentioned beside"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "option": "RRC Radio Cause",
+                "Counters": "pmRrcConnEstabFailFailureInRadioProcedure",
+                "options": [
+                  {
+                    "option": "RRC Poor DL SINR CQI",
+                    "Counters": "pmRadioUeRepCqiDistr , pmRadioUeRepCqiDistr2",
+                    "Parameter": "maximumTransmissionPower partOfSectorPower confOutputPower crsGain pdschTypeBGain",
+                    "Action plan": "Tune related parameters (as mentioned beside) , Physical optimization (Tilt , Azimuth , height of antenna, Identify overshooting cells causing interference in DL , Audit cell reselection parameters"
+                  },
+                  {
+                    "option": "RRC Coverage issues",
+                    "Counters": "pmBadCovEvalReport pmRadioTbsPwrRestricted pmBadCovSearchEvalReport",
+                    "Parameter": "maximumTransmissionPower partOfSectorPower confOutputPower crsGain pdschTypeBGain",
+                    "Action plan": "Indoor coverage issue (Small cell , PICO , DOT , Hetnet), Physical changes (Tilt , Azimuth , height of antenna), Audit cell reselection parameters & Tune DL power related parameters (as mentioned beside) also Check if there is scope of new site"
+                  },
+                  {
+                    "option": "RRC UL RSSI",
+                    "Counters": "pmRadioRecInterferencePwr pmRadioRecInterferencePwrPucch pmRadioRecInterferencePwrPrb1~100 pmSinrPucchDistr , pmSinrPuschDistr",
+                    "Parameter": "pZeroNominalPucch pZeroNominalPusch",
+                    "Action plan": "Check Power control parameters, Features like IRC & UL FSS can help to reduce UL interference., Check for Loose Connectors,Faulty Antenna(Tx & Rx antenna ports),VSWR alarms,Faulty TMA Connections/settings., External interference (cable tv , repeaters (due to power leak issues) , airport , police communication system etc..)"
+                  }
+                ]
+              },
+              {
+                "option": "RRC Other Causes",
+                "options": [
+                  {
+                    "option": "pmRrcConnReestFailLicMtReest",
+                    "Action plan": "pegged due to lack of license of feature Multi-Target RRC Connection Reestablishment"
+                  },
+                  {
+                    "option": "pmRrcConnEstabFailLackOfResources",
+                    "Counters": "pmPrbUtilDl pmPrbUtilUl",
+                    "Parameter": "noOfPucchCqiUsers , noOfPucchSrUsers , pdcchCfiMode tInactivityTimer , qRxLevMin , dlMaxRetxThreshold ulMaxRetxThreshold , qOffsetcellEUtran SchedulingAlgorithm , crsGain",
+                    "Action plan": "Tune parameters mentioned aside Physical changes (Tilt , Azimuth , height of antenna) Tune cell reselection parameters to offload traffic to nearby cells"
+                  },
+                  {
+                    "option": "pmRrcConnEstabFailUnspecified",
+                    "Action plan": "Mainly pegged due to eNB issues"
+                  },
+                  {
+                    "option": "SRB admission control",
+                    "Counters": "PmPdcchCceUtil",
+                    "Parameter": "pdcchAdmThreshold , noOfPucchCqiUsers , noOfPucchSrUsers pdcchCfiMode , tInactivityTimer , qRxLevMin dlMaxRetxThreshold , ulMaxRetxThreshold qOffsetcellEUtran , SchedulingAlgorithm , crsGain",
+                    "Action plan": "SRB admission control Tune parameters mentioned aside Physical changes (Tilt , Azimuth , height of antenna) Tune cell reselection parameters"
+                  }
+                ]
+              },
+              {
+                "option": "MME overload",
+                "Counters": "pmRrcConnEstabFailMmeOvlMos pmRrcConnEstabFailMmeOvlMod",
+                "Action plan": "Check parameters related to MME Overload Control feature & MME Dimensioning"
+              },
+              {
+                "option": " RRC Other checks",
+                "options": [
+                  {
+                    "option": "RRC Low number of attempt",
+                    "Action plan": "If there are more then 1 carrier optimize load balancing parameter, Optimize tilt/azimuth/antenna height to balance traffic from near by sites, check for alarms or other hardware issues"
+                  },
+                  {
+                    "option": "RRC Availability",
+                    "options": [
+                      {
+                        "option": "RRC Cell down",
+                        "options": [
+                          {
+                            "option": "RRC Cell Down Auto",
+                            "options": [
+                              {
+                                "option": "RRC eNodeB Cause",
+                                "options": [
+                                  {
+                                    "option": "RRC Configuration issues",
+                                    "Action plan": "ensure proper configuration , especially for all new site which are integrated recently"
+                                  },
+                                  {
+                                    "option": "RRC Auto Restart",
+                                    "Action plan": "Ensure the eNodeB structure of the restart, MP、Baseband or RRU lh all llog -l (do complete eNB health checkup)"
+                                  },
+                                  {
+                                    "option": "RRC Baseband Startup issue",
+                                    "Action plan": "Baseband Trace can be used , te enable all bbmcBbOmMeSwU"
+                                  }
+                                ]
+                              },
+                              {
+                                "option": "RRC Transport Cause S1 issues",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure"
+                              },
+                              {
+                                "option": "RRC EPC Cause",
+                                "Action plan": "check for alarms like Service Unavailable(S1 connection failure) , Ip packet loss above SGW"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "RRC Cell Down Manually",
+                            "Counters": "pmCellDowntimeMan pmCellDownLockMan",
+                            "Action plan": "Operation Cause manually locked during network configuration issues ((eg. adding/changing/removing hardware) manually locked during parameter change (eg. activate feature)"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "RRC Sleeping Cell",
+                        "Counters": "pmRaAttCbra,pmRaSuccCbra, pmRaFailCbraMsg2Disc, pmRaAttCfra, pmRaSuccCfra, pmRaFailCfraMsg2Disc, pmRaAllocCfra, pmRrcConnEstabAtt, pmRrcConnSucc",
+                        "Action plan": "Verify symptoms for sleeping cell",
+                        "options": [
+                          {
+                            "option": "RRC Trace(Baseband)",
+                            "Action plan": "trace from MSG1 to MSG5 , verify symtoms for sleeping cells"
+                          }
+                        ]
+                      },
+                      {
+                        "option": "RRC Non-access issue",
+                        "options": [
+                          {
+                            "option": "RRC Configuration issue",
+                            "options": [
+                              {
+                                "option": "RRC Power setting issue",
+                                "Action plan": "Check SectorEquipmentFunction:ConfiguredOutputPower & Eutrancelltdd:partOfSectorPower"
+                              },
+                              {
+                                "option": "RRC Idle mode parameter issue",
+                                "Action plan": "Check Eutrancelltdd MO cell selection and reselection parameters & 3G&2G cell reselection parameter/feature"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "RRC Operation issues",
+                            "options": [
+                              {
+                                "option": "RRC Cell Barred",
+                                "Action plan": "Check Cell Barred , acBarring for different scenarios"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "option": "RRC HW Cause",
+                    "options": [
+                      {
+                        "option": "RRC Alarms",
+                        "Action plan": "Common alarm : resource configuration disable , RRU fault , link failure , Check current & history alarms & take necessary action according to type of Alarm, Check RRU status , Reset boards , Verify SW on node, S1 links down due to faulty interface board."
+                      },
+                      {
+                        "option": "RRC VSWR",
+                        "Action plan": "CABX , verify VSWR on all ports of antenna"
+                      },
+                      {
+                        "option": "RRC TMA check",
+                        "Action plan": "Faulty TMA Connections & faulty settings"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "option": "S1 SIGNALLING CONNECTION",
+            "Counters": "PmS1SigConnEstabAtt (pmS1SigConnEstabAttHpa , pmS1SigConnEstabAttMod, pmS1SigConnEstabAttMta , pmS1SigConnEstabAttMos, pmS1SigConnEstabAttDta , pmS1SigConnEstabAttEm), PmS1SigConnEstabSucc, (pmS1SigConnEstabSuccEm , pmS1SigConnEstabSuccHpa, pmS1SigConnEstabSuccMod , pmS1SigConnEstabSuccMta, pmS1SigConnEstabSuccMos , pmS1SigConnEstabSuccDta), pmS1SigConnEstabFailMmeOvlMos",
+            "options": [
+              {
+                "option": "S1 Other Checks",
+                "options": [
+                  {
+                    "option": "TN issue",
+                    "Action plan": "Check S1 interface , S1 links down due to faulty interface board"
+                  },
+                  {
+                    "option": "TAC wrong",
+                    "Action plan": "Configure Correct TAC as per planning & ensure correct TAC LAC Mapping"
+                  },
+                  {
+                    "option": "CN abnormal release",
+                    "Action plan": "Cell trace and check with Core Engineer"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "option": "ERAB ESTABLISHMENT",
+            "Counters": "PmErabEstabAttInit (pmErabEstabAttInitArp , pmErabEstabAttInitPa) PmErabEstabSuccInit., (pmErabEstabSuccInitArp , pmErabEstabSuccInitPa), PmErabEstabAttAdded, (pmErabEstabAttAddedArp , pmErabEstabAttAddedPa), PmErabEstabSuccAdded, (pmErabEstabSuccAddedArp , pmErabEstabSuccAddedPa), pmErabEstabAttAddedHoOngoing, pmErabEstabAttAddedHoOngoingArp",
+            "options": [
+              {
+                "option": "PM Counter",
+                "options": [
+                  {
+                    "option": "pmErabEstabFailGbrDlEnb",
+                    "Action plan": "Tune Dynamic GBR Admission Control related parameter"
+                  },
+                  {
+                    "option": "pmErabEstabFailGbrUlEnb",
+                    "Action plan": "Tune Dynamic GBR Admission Control related parameter"
+                  },
+                  {
+                    "option": "Erab License",
+                    "options": [
+                      {
+                        "option": "pmErabEstabFailAddedLic",
+                        "Action plan": "Check license & Feature state of Multiple Radio Bearer per user or RLC UM"
+                      },
+                      {
+                        "option": "pmErabEstabFailInitLic",
+                        "Action plan": "Check license & Feature state of Multiple Radio Bearer per user or RLC UM"
+                      },
+                      {
+                        "option": "pmErabModFailLic",
+                        "Action plan": "Lack of license of Dynamic QoS Modification"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "option": " ERAB Radio Cause",
+                "options": [
+                  {
+                    "option": "ERAB Poor DL SINR CQI",
+                    "Counters": "pmRadioUeRepCqiDistr pmRadioUeRepCqiDistr2",
+                    "Parameter": "maximumTransmissionPower partOfSectorPower confOutputPower crsGain pdschTypeBGain",
+                    "Action plan": "Tune related parameters (as mentioned beside) , Audit cell reselection parameters, Physical optimization (Tilt , Azimuth , height of antenna), Identify overshooting cells causing interference in DL"
+                  },
+                  {
+                    "option": "ERAB Coverage issues",
+                    "Counters": "pmBadCovEvalReport pmRadioTbsPwrRestricted pmBadCovSearchEvalReport",
+                    "Parameter": "maximumTransmissionPower partOfSectorPower confOutputPower crsGain pdschTypeBGain",
+                    "Action plan": "Indoor coverage issue (Small cell , PICO , DOT , Hetnet), Physical changes (Tilt , Azimuth , height of antenna), Audit cell reselection parameters & Tune DL power related parameters (as mentioned beside) also Check if there is scope of new site"
+                  },
+                  {
+                    "option": "ERAB UL RSSI",
+                    "Counters": "pmRadioRecInterferencePwr, pmRadioRecInterferencePwrPucch, pmRadioRecInterferencePwrPrb1~100, pmSinrPucchDistr , pmSinrPuschDistr",
+                    "Parameter": "pZeroNominalPucch pZeroNominalPusch",
+                    "Action plan": "Check Power control parameters, Features like IRC & UL FSS can help to reduce UL interference., Check for Loose Connectors,Faulty Antenna(Tx & Rx antenna ports),VSWR alarms,Faulty TMA Connections/settings., External interference (cable tv , repeaters (due to power leak issues) , airport , police communication system etc..)"
+                  }
+                ]
+              },
+              {
+                "option": "ERAB Other checks",
+                "options": [
+                  {
+                    "option": "ERAB HW Cause",
+                    "options": [
+                      {
+                        "option": "ERAB Availability",
+                        "options": [
+                          {
+                            "option": "ERAB Cell down",
+                            "options": [
+                              {
+                                "option": "ERAB Cell Down Auto",
+                                "options": [
+                                  {
+                                    "option": "ERAB eNodeB Cause",
+                                    "options": [
+                                      {
+                                        "option": "ERAB Configuration issues",
+                                        "Action plan": "ensure proper configuration , especially for all new site which are integrated recently"
+                                      },
+                                      {
+                                        "option": "ERAB Auto Restart",
+                                        "Action plan": "Ensure the eNodeB structure of the restart, MP、Baseband or RRU lh all llog -l (do complete eNB health checkup)"
+                                      },
+                                      {
+                                        "option": "ERAB Baseband Startup issue",
+                                        "Action plan": "Baseband Trace can be used , te enable all bbmcBbOmMeSwU"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "option": "ERAB Transport Cause S1 issues",
+                                    "Action plan": "check for alarms like Service Unavailable(S1 connection failure)"
+                                  },
+                                  {
+                                    "option": "ERAB EPC Cause",
+                                    "Action plan": "check for alarms like Service Unavailable(S1 connection failure) , Ip packet loss above SGW"
+                                  }
+                                ]
+                              },
+                              {
+                                "option": "ERAB Cell Down Manually",
+                                "Counters": "pmCellDowntimeMan pmCellDownLockMan",
+                                "Action plan": "Operation Cause manually locked during network configuration issues ((eg. adding/changing/removing hardware) manually locked during parameter change (eg. activate feature)"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "ERAB Sleeping Cell",
+                            "Counters": "pmRaAttCbra, pmRaSuccCbra, pmRaFailCbraMsg2Disc, pmRaAttCfra, pmRaSuccCfra, pmRaFailCfraMsg2Disc, pmRaAllocCfra, pmRrcConnEstabAtt, pmRrcConnSucc",
+                            "Action plan": "Verify symtoms for sleeping cell",
+                            "options": [
+                              {
+                                "option": "ERAB Catch Trace(Baseband)",
+                                "Action plan": "trace from MSG1 to MSG5 , verify symtoms for sleeping cells"
+                              }
+                            ]
+                          },
+                          {
+                            "option": "ERAB Non-access issue",
+                            "options": [
+                              {
+                                "option": "ERAB Configuration issue",
+                                "options": [
+                                  {
+                                    "option": "ERAB Power setting issue",
+                                    "Action plan": "Check SectorEquipmentFunction:ConfiguredOutputPower & Eutrancelltdd:partOfSectorPower"
+                                  },
+                                  {
+                                    "option": "ERAB Idle mode parameter issue",
+                                    "Action plan": "Check Eutrancelltdd MO cell selection and reselection parameters & 3G&2G cell reselection parameter/feature"
+                                  }
+                                ]
+                              },
+                              {
+                                "option": "ERAB Operation issues",
+                                "options": [
+                                  {
+                                    "option": "ERAB Cell Barred",
+                                    "Action plan": "Check Cell Barred , acBarring for different scenarios"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "option": "ERAB Alarms",
+                        "Action plan": "Common alarm : resource configuration disable , RRU fault , link failure , Check current & history alarms & take necessary action according to type of Alarm, Check RRU status , Reset boards , Verify SW on node, S1 links down due to faulty interface board."
+                      },
+                      {
+                        "option": "ERAB VSWR",
+                        "Action plan": "CABX , verify VSWR on all ports of antenna"
+                      },
+                      {
+                        "option": "ERAB TMA check",
+                        "Action plan": "Faulty TMA Connections & faulty settings"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}]

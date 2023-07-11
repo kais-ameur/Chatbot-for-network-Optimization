@@ -1,0 +1,218 @@
+[{
+  "_id": {
+    "$oid": "640898c0cd1923c34e36daa2"
+  },
+  "category": "IRAT Handove",
+  "next": "Handover Preparation Failure, Handover Execution Failure",
+  "solution": "not ready",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "640898c0cd1923c34e36daa3"
+  },
+  "category": "Handover Preparation Failure",
+  "next": "Target Cell Availibility, configuration issue, EPC Cause,Target cell load,Tune parameters,HW issues",
+  "solution": "not ready",
+  "counter_value": "(pmHoPrepAtt-pmHoPrepSucc)<pmHoExeSucc",
+  "counters": [
+    "pmHoPrepAtt",
+    "pmHoPrepSucc"
+  ]
+},{
+  "_id": {
+    "$oid": "640898c0cd1923c34e36daa4"
+  },
+  "category": "Handover Execution Failure",
+  "next": "Poor Coverage,Target cell High UL interference,Wrong neighbour,HW issues",
+  "solution": "not ready",
+  "counter_value": "(pmHoExeAtt-pmHoExeSucc)<pmHoExeSucc",
+  "counters": [
+    "pmHoExeAtt",
+    " pmHoExeSucc"
+  ]
+},{
+  "_id": {
+    "$oid": "640898c0cd1923c34e36daa5"
+  },
+  "category": "Target Cell Availibility",
+  "next": "none",
+  "solution": "target site is disabled / sector down / software package corrupt",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "640898c0cd1923c34e36daa6"
+  },
+  "category": "configuration issue",
+  "next": "none",
+  "solution": "Frequency relation (UtranFreqRelation) , neighbor relation (ExternalUtrancell)",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "640898c0cd1923c34e36daa7"
+  },
+  "category": "HW issues",
+  "next": "none",
+  "solution": "Check HW issues , alarms , improper cabling , connector issues , VSWR",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "6409d9bc750f33edd83761de"
+  },
+  "category": "MCPC",
+  "next": "MCPCparams",
+  "solution": "not ready",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "6409d9bc750f33edd83761df"
+  },
+  "category": "MCPCparams",
+  "next": "MCPCSolutions",
+  "solution": "not ready",
+  "counter_value": "pmCriticalBorderEvalReport>pmBadCovSearchEvalReport",
+  "counters": [
+    "pmCriticalBorderEvalReport",
+    "pmBadCovSearchEvalReport"
+  ]
+},{
+  "_id": {
+    "$oid": "6409d9bc750f33edd83761e0"
+  },
+  "category": "MCPCSolutions",
+  "next": "none",
+  "solution": "Tune parameters according to number of carriers in LTE",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "642b22b3cb1826d9a9fe2b8b"
+  },
+  "category": "LTE Intra/Inter Frequency(HOSR)",
+  "next": "LTE Handover Preparation Failure, LTE Handover Execution Failure,Other imp checks",
+  "solution": "not ready",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "642b241ecb1826d9a9fe2b91"
+  },
+  "category": "LTE Handover Preparation Failure",
+  "next": "Neighbor cell load issue,Neighbor cell License issue,Admission reject,Configuration issue",
+  "solution": "not ready",
+  "counter_value": "(pmHoPrepAttLTEIntraF>pmHoPrepSuccLTEIntraF) or (pmHoPrepAttLTEInterF>pmHoPrepSuccLTEInterF)",
+  "counters": [
+    "pmHoPrepAttLTEIntraF",
+    "pmHoPrepSuccLTEIntraF",
+    "pmHoPrepAttLTEInterF",
+    "pmHoPrepSuccLTEInterF"
+  ]
+},{
+  "_id": {
+    "$oid": "642b248ecb1826d9a9fe2b93"
+  },
+  "category": "Neighbor cell load issue",
+  "next": "Neighbor cell load issue solution",
+  "solution": "not ready",
+  "counter_value": "pmHoPrepRejInHighLoad>pmHoPrepRejInOverload",
+  "counters": [
+    "pmHoPrepRejInHighLoad",
+    "pmHoPrepRejInOverload"
+  ]
+},{
+  "_id": {
+    "$oid": "642b24efcb1826d9a9fe2b94"
+  },
+  "category": "Neighbor cell load issue solution",
+  "next": "none",
+  "solution": "Check these counters on target cell , Reduce no. of HO by physical opti or features (UE Level Oscillating Handover Minimization & Automated Mobility Optimization),MP capacity of DUS is higher than DUL , to increase MP capacity DUL can be replaced by DUS Physical changes (Tilt , Azimuth , height of antenna) to offload traffic from target cell Offload Target cell Load by changing Layering strategy, Idle mode cellreselection, connected mode mobility & Load balancing parameters",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "645b5e48e847bf104b66829f"
+  },
+  "category": "Random Access",
+  "next": "Contention Based random Access",
+  "solution": "not ready",
+  "counter_value": "L_Access_Rate>95",
+  "counters": [
+    "L_Access_Rate"
+  ]
+},{
+  "_id": {
+    "$oid": "645b637ee847bf104b6682a4"
+  },
+  "category": "Contention Based random Access",
+  "next": "CBRA solution",
+  "solution": "not ready",
+  "counter_value": "(((pmRaAttCbra-pmRaSuccCbra)/pmRaAttCbra)*100)>((pmRaSuccCbra/pmRaAttCbra)*100) ",
+  "counters": [
+    "pmRaAttCbra",
+    "pmRaSuccCbra"
+  ]
+},{
+  "_id": {
+    "$oid": "645b6469e847bf104b6682a5"
+  },
+  "category": "CBRA solution",
+  "next": "none",
+  "solution": "Improve RF conditions (by parameters or physical optimization (tilt/azimuth/antenna height)),Check RSI planning (ex. For 15km cell range, diff of 10 between 2 neighbours),Tune RACH related parameters , also check symptoms for sleeping cell (mentioned below)",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "645b650be847bf104b6682a6"
+  },
+  "category": "SSSR",
+  "next": "RRC connection,S1 SIGNALLING CONNECTION,ERAB ESTABLISHMENT",
+  "solution": "not ready",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "645b657fe847bf104b6682a7"
+  },
+  "category": "RRC connection",
+  "next": "Capacity cause,Radio Cause,Other Causes,MME overload,RRCOther checks",
+  "solution": "not ready",
+  "counter_value": "(RRCSuccessrate)>95",
+  "counters": [
+    "RRCSuccessrate"
+  ]
+},{
+  "_id": {
+    "$oid": "645b6683e847bf104b6682a8"
+  },
+  "category": "S1 SIGNALLING CONNECTION",
+  "next": "S1SigConnCheck,S1Other Checks",
+  "solution": "not ready",
+  "counter_value": "(S1SignalingSR)>95",
+  "counters": [
+    "S1SignalingSR"
+  ]
+},{
+  "_id": {
+    "$oid": "645b6718e847bf104b6682aa"
+  },
+  "category": "S1Other Checks",
+  "next": "none",
+  "solution": "Check MME signalling dimensioning",
+  "counter_value": "0",
+  "counters": "none"
+},{
+  "_id": {
+    "$oid": "645b67b8e847bf104b6682ad"
+  },
+  "category": "S1SigConnCheck",
+  "next": "none",
+  "solution": "Check S1 interface , S1 links down due to faulty interface board,Configure Correct TAC as per planning & ensure correct TAC LAC Mapping,Cell trace and check with Core Engineer",
+  "counter_value": "pmS1SigConnEstabFailMmeOvlMos>1000",
+  "counters": [
+    "pmS1SigConnEstabFailMmeOvlMos"
+  ]
+}]

@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad68c"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=9_AVRIL,MeContext=B4G3G_9_AVRIL",
+  "ELEMENT": "B4G3G_9_AVRIL",
+  "MOID": "ManagedElement=B4G3G_9_AVRIL,ENodeBFunction=1,EUtranCellFDD=LGB924O",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 40,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 40
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad68d"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=9_AVRIL,MeContext=B4G3G_9_AVRIL",
+  "ELEMENT": "B4G3G_9_AVRIL",
+  "MOID": "ManagedElement=B4G3G_9_AVRIL,ENodeBFunction=1,EUtranCellFDD=LGB924P",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 40,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 10
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad68e"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=9_AVRIL,MeContext=B4G3G_9_AVRIL",
+  "ELEMENT": "B4G3G_9_AVRIL",
+  "MOID": "ManagedElement=B4G3G_9_AVRIL,ENodeBFunction=1,EUtranCellFDD=LGB924Q",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 40,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 10
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad68f"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=9_AVRIL,MeContext=B4G3G_9_AVRIL",
+  "ELEMENT": "B4G3G_9_AVRIL",
+  "MOID": "ManagedElement=B4G3G_9_AVRIL,ENodeBFunction=1,EUtranCellFDD=LGB924X",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 40,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 10
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad690"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=9_AVRIL,MeContext=B4G3G_9_AVRIL",
+  "ELEMENT": "B4G3G_9_AVRIL",
+  "MOID": "ManagedElement=B4G3G_9_AVRIL,ENodeBFunction=1,EUtranCellFDD=LGB924Y",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 40,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 10
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad691"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=9_AVRIL,MeContext=B4G3G_9_AVRIL",
+  "ELEMENT": "B4G3G_9_AVRIL",
+  "MOID": "ManagedElement=B4G3G_9_AVRIL,ENodeBFunction=1,EUtranCellFDD=LGB924Z",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 70,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 20
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad692"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=AeroportGabes,MeContext=B4G3G_AeroportGabes",
+  "ELEMENT": "B4G3G_AeroportGabes",
+  "MOID": "ManagedElement=B4G3G_AeroportGabes,ENodeBFunction=1,EUtranCellFDD=LGB929O",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 70,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 20
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad693"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=AeroportGabes,MeContext=B4G3G_AeroportGabes",
+  "ELEMENT": "B4G3G_AeroportGabes",
+  "MOID": "ManagedElement=B4G3G_AeroportGabes,ENodeBFunction=1,EUtranCellFDD=LGB929P",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 70,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 20
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad694"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=AeroportGabes,MeContext=B4G3G_AeroportGabes",
+  "ELEMENT": "B4G3G_AeroportGabes",
+  "MOID": "ManagedElement=B4G3G_AeroportGabes,ENodeBFunction=1,EUtranCellFDD=LGB929Q",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 70,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 20
+},{
+  "_id": {
+    "$oid": "64186345be2bea336c2ad695"
+  },
+  "OSS_ID": "eniq_oss_1",
+  "SN": "SubNetwork=ONRM_ROOT_MO,SubNetwork=SRAN,SubNetwork=GABES,SubNetwork=AeroportGabes,MeContext=B4G3G_AeroportGabes",
+  "ELEMENT": "B4G3G_AeroportGabes",
+  "MOID": "ManagedElement=B4G3G_AeroportGabes,ENodeBFunction=1,EUtranCellFDD=LGB929X",
+  "pmHoExeSucc": 30,
+  "pmHoExeAtt": 70,
+  "pmCriticalBorderEvalReport": 30,
+  "pmBadCovSearchEvalReport": 40
+}]

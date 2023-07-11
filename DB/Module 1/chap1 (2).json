@@ -1,0 +1,1341 @@
+[{
+  "_id": {
+    "$oid": "640f2724ec046e11f40be366"
+  },
+  "abbrv": "TCP",
+  "fullname": "TRANSMISSION CONTROL PROTOCOL",
+  "definition": "is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol. Therefore, the entire suite is commonly referred to as TCP/IP",
+  "others": ""
+},
+{
+  "_id": {
+    "$oid": "640f272dec046e11f40be367"
+  },
+  "abbrv": "NIR",
+  "fullname": "NETWORK IMPACT REPORT",
+  "definition": "The purpose is to provide information at an early stage to support the\nintroduction of new features and upgrades to the network.",
+  "others": ""
+},
+{
+  "_id": {
+    "$oid": "640f2732ec046e11f40be368"
+  },
+  "abbrv": "FAJ1211447",
+  "definition": "replaces some non-adaptive\nretransmissions with adaptive retransmissions in uplink. This is done to reduce\nthe fragmentation rate of the uplink spectrum. With reduced fragmentation, the\nuplink spectrum can be used more efficiently.",
+  "fullname": "UPLINK ADAPTIVE RETRANSMISSION ENHANCEMENT",
+  "others": "file:///C:/Users/fayce/Downloads/Documents/10_10948-lza7016014_1-v1uen_gn7z.pdf page 4"
+},
+{
+  "_id": {
+    "$oid": "640f2743ec046e11f40be369"
+  },
+  "definition": "enables operators to differentiate prescheduling configuration for\nsubscribers in advanced subscriber groups (ASG).",
+  "fullname": "ADVANCED SUBSCRIBER GROUP HANDLING BASED ( ASGH   BASED ) PRESCHEDULING",
+  "others": "file:///C:/Users/fayce/Downloads/Documents/10_10948-lza7016014_1-v1uen_gn7z.pdf page 7",
+  "abbrv": "FAJ1214797"
+},
+{
+  "_id": {
+    "$oid": "640f274dec046e11f40be36a"
+  },
+  "abbrv": "FAJ1214776",
+  "definition": "is based on the three-splitter Baseband R503. It allows two separate Managed Elements (MEs) to share three splitters within one Baseband R503.",
+  "fullname": "MIXED MODE BASEBAND R503",
+  "others": "file:///C:/Users/fayce/Downloads/Documents/10_10948-lza7016014_1-v1uen_gn7z.pdf page 8"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b0"
+  },
+  "abbrv": "FAJ1214242",
+  "fullname": "13–18 Cell Support",
+  "definition": "is in package name :Large eNodeB ( FAJ 801 0403 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Support18Cells and License Control MO/Baseband-based Node, FeatureState= CXC4011917 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\n6 Cell Support (FAJ 121 1821)\n7-12 Cell Support (FAJ 121 3020)\n\nDepends on customer needs."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b1"
+  },
+  "abbrv": "FAJ1214426",
+  "fullname": "19–24 Cell Support",
+  "definition": "is in package name :Large eNodeB ( FAJ 801 0403 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Support24Cells and License Control MO/Baseband-based Node, FeatureState= CXC4011974 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\n6 Cell Support (FAJ 121 1821)\n7-12 Cell Support (FAJ 121 3020)\n13-18 Cell Support (FAJ 121 4242)\n\nDepends on customer needs."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b2"
+  },
+  "abbrv": "FAJ1213084",
+  "fullname": "3CC DL Carrier Aggregation Extension",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ThreeDlCarrierAggregation and License Control MO/Baseband-based Node, FeatureState= CXC4011714 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Recommended activated if any of the potential Pcells in the node have 2 or more Scell candidates."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b3"
+  },
+  "abbrv": "FAJ1214466",
+  "fullname": "4CC DL Carrier Aggregation Extension",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= FourDlCarrierAggregation and License Control MO/Baseband-based Node, FeatureState= CXC4011980 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Recommended activated if any of the potential Pcells in the node have 3 or more Scell candidates."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b4"
+  },
+  "abbrv": "FAJ1214901",
+  "fullname": "4x4 Full Interference Rejection Combining",
+  "definition": "is in package name :Spectral Efficiency ( FAJ 801 1015 ) with License Control MO/DU radio Node,OptionalFeatureLicense= 4x4FullInterferenceRejComb and License Control MO/Baseband-based Node, FeatureState= CXC4012271 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nInterference Rejection Combining (FAJ 121 0780)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b5"
+  },
+  "abbrv": "FAJ1211821",
+  "fullname": "6 Cell Support",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Support6Cells and License Control MO/Baseband-based Node, FeatureState= CXC4011317 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Conflicting:\nOctal Antenna Uplink Performance Package (FAJ 121 2052)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b6"
+  },
+  "abbrv": "FAJ1213020",
+  "fullname": "7 12 Cell Support",
+  "definition": "is in package name :Large eNodeB ( FAJ 801 0403 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Support12Cells and License Control MO/Baseband-based Node, FeatureState= CXC4011356 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\n6 Cell Support (FAJ 121 1821)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b7"
+  },
+  "abbrv": "FAJ1215036",
+  "fullname": "Accelerated Inter Frequency Load Balancing",
+  "definition": "is in package name :Multicarrier Load Management ( FAJ 801 0427 ) with License Control MO/DU radio Node,OptionalFeatureLicense= AcceleratedIFLB and License Control MO/Baseband-based Node, FeatureState= CXC4012349 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nInter-Frequency Load Balancing (FAJ 121 3009)\nInter-Frequency Offload (FAJ 121 3061)\nInter-RAT Offload to WCDMA (FAJ 121 3048)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b8"
+  },
+  "abbrv": "FAJ1213100",
+  "fullname": "Admission Triggered Offload",
+  "definition": "is in package name :Service-Based Mobility ( FAJ 801 0433 ) with License Control MO/DU radio Node,OptionalFeatureLicense= AdmissionTriggeredOffload and License Control MO/Baseband-based Node, FeatureState= CXC4011814 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description.\n\nLTE ESS: Refer to CPI LTE-NR Dynamic Spectrum Sharing description for details about the relations.\nLTE 5G Plugin/EN-DC: This LTE feature is not supported for UEs with Secondary Node terminated split DRBs."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6b9"
+  },
+  "abbrv": "FAJ1210855",
+  "fullname": "Air Interface Load Generator",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= AirIfLoadGenerator and License Control MO/Baseband-based Node, FeatureState= CXC4010955 and featureState/Recommended Value =  DEACTIVATED",
+  "others": "Conflicting:\nIntelligent Power Emission Control (FAJ 121 5224)\n\nOnly to be activated in specific conditions. Refer to CPI Feature Description.\n\nLTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ba"
+  },
+  "abbrv": "FAJ1214796",
+  "fullname": "ASGH Performance Package",
+  "definition": "is in package name :Differentiated Mobile Broadband ( FAJ 801 0409 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UlTrigInterFreqMob and License Control MO/Baseband-based Node, FeatureState= CXC4012199 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nASGH Framework (FAJ 121 4795)The Uplink-Triggered Inter-Frequency Mobility feature can be used in scenarios where there are uplink problems. Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6bb"
+  },
+  "abbrv": "FAJ1214728",
+  "fullname": "Assisted Time Holdover",
+  "definition": "is in package name :Time and Phase Synchronization ( FAJ 801 0439 ) with License Control MO/DU radio Node,OptionalFeatureLicense= AssistedTimeHoldOver and License Control MO/Baseband-based Node, FeatureState= CXC4012104 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Activation depends on operator policy. Not possible to provide recommended values for related MOM attributes. Please refer to CPI Feature Description and to CPI \"Network Synchronization Solution\"."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6bc"
+  },
+  "abbrv": "FAJ1215065",
+  "fullname": "Atmospheric Duct Interference Reduction",
+  "definition": "is in package name :Spectral Efficiency ( FAJ 801 1015 ) with License Control MO/DU radio Node,OptionalFeatureLicense= AtmoDuctInterferenceReduction and License Control MO/Baseband-based Node, FeatureState= CXC4012256 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Feature activation of Atmospheric Duct Interference Reduction depends on the existence of atmospheric duct interfence in the network.\nThe feature supports TDD mode only."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6bd"
+  },
+  "abbrv": "FAJ1213035",
+  "fullname": "Automated Mobility Optimization",
+  "definition": "is in package name :Self-Organizing Networks ( FAJ 801 0435 ) with License Control MO/DU radio Node,OptionalFeatureLicense= AutomatedMobilityOptimization and License Control MO/Baseband-based Node, FeatureState= CXC4011376 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6be"
+  },
+  "abbrv": "FAJ1210497",
+  "fullname": "Automated Neighbor Relations",
+  "definition": "is in package name :Self-Organizing Networks ( FAJ 801 0435 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Anr and License Control MO/Baseband-based Node, FeatureState= CXC4010620 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: While Automated Neighbor Relations measurements are ongoing, the NR B1 measurement is disabled. The feature uses specific DRX configuration for CGI reading which is kept. After CGI reading, the DRX configuration is restored.\nThe Automated Neighbor Relations feature triggers NR CGI reading when the Basic Intelligent Connectivity feature tries to set up an EN-DC connection with a cell that does not have a cell relation.\n\nLTE ESS: Supported with SA but not supported with NSA."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6bf"
+  },
+  "abbrv": "FAJ1213065",
+  "fullname": "Best Neighbor Relations for WCDMA IRAT Offload",
+  "definition": "is in package name :LTE Offload  to WCDMA ( FAJ 801 0421 ) with License Control MO/DU radio Node,OptionalFeatureLicense= BnrIratOffload and License Control MO/Baseband-based Node, FeatureState= CXC4010512 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c0"
+  },
+  "abbrv": "FAJ1213046",
+  "fullname": "Carrier Aggregation",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CarrierAggregation and License Control MO/Baseband-based Node, FeatureState= CXC4011476 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c1"
+  },
+  "abbrv": "FAJ1213075",
+  "fullname": "Carrier Aggregation Aware IFLB",
+  "definition": "is in package name :Advanced Carrier Aggregation ( FAJ 801 0564 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CarrierAggregationAwareIFLB and License Control MO/Baseband-based Node, FeatureState= CXC4011666 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: The Carrier Aggregation-Aware IFLB LTE feature is blocked when LTE carrier aggregation is configured for the EN-DC connection."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c2"
+  },
+  "abbrv": "FAJ1214658",
+  "fullname": "Category M Access",
+  "definition": "is in package name :M-IoT RAN on LTE Base Package ( FAJ 801 1000 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CategoryMAccess and License Control MO/Baseband-based Node, FeatureState= CXC4012082 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Conflicting:\nInterference Rejection Combining for AAS FDD (FAJ 121 4919)\nIntelligent Power Emission Control (FAJ 121 5224)\nPsi-Coverage (FAJ 121 4186)\nSupplemental Downlink for Carrier Aggregation (FAJ 121 3068)\n\nLTE Massive IoT: Mandatory for Cat-M. Enables Category M support. Should not be enabled in a Supplemental Downlink for Carrier Aggregation cell."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c3"
+  },
+  "abbrv": "FAJ1214766",
+  "fullname": "Category M Basic VoLTE",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CategoryMBasicVolte and License Control MO/Baseband-based Node, FeatureState= CXC4012163 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658)\n\nLTE ESS: Refer to CPI LTE-NR FDD Spectrum Sharing with Category M description for details about the relations.\n\nLTE Massive IoT: Refer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c4"
+  },
+  "abbrv": "FAJ1214784",
+  "fullname": "Category M Connected Mode Mobility",
+  "definition": "is in package name :M-IoT RAN on LTE Base Package ( FAJ 801 1000 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CatMConnModeMobility and License Control MO/Baseband-based Node, FeatureState= CXC4012187 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658)\n\nLTE ESS: Refer to CPI LTE-NR FDD Spectrum Sharing with Category M description for details about the relations.\n\nLTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c5"
+  },
+  "abbrv": "FAJ1214932",
+  "fullname": "Category M Enhanced Cell ID Location Support",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CategoryMECIDLocationSupport and License Control MO/Baseband-based Node, FeatureState= CXC4012289 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658)\n\nLTE Massive IoT: Positioning infrastructure support is needed."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c6"
+  },
+  "abbrv": "FAJ1214943",
+  "fullname": "Category M Enhanced Paging Capacity",
+  "definition": "is in package name :M-IoT RAN on LTE Base Package ( FAJ 801 1000 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CatMEnhancedPagingCapacity and License Control MO/Baseband-based Node, FeatureState= CXC4012303 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658)\n\nLTE Massive IoT: Use if high Cat-M1 paging is observed."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c7"
+  },
+  "abbrv": "FAJ1214979",
+  "fullname": "Category M Flexible Uplink Channel Allocation",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CatmFlexibleUplinkChannelAlloc and License Control MO/Baseband-based Node, FeatureState= CXC4012318 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658)\n\nLTE Massive IoT: Feature should be used only when frequencies used by Cat-M are interfered. Before activation appropriate measurements needs to be performed."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c8"
+  },
+  "abbrv": "FAJ1214980",
+  "fullname": "Category M Link Adaptation with Aperiodic CQI",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CatMLinkAdaptationAperiodicCqi and License Control MO/Baseband-based Node, FeatureState= CXC4012319 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658).\n\nLTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6c9"
+  },
+  "abbrv": "FAJ1214898",
+  "fullname": "Category M Load Distribution",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CatMLoadDistribution and License Control MO/Baseband-based Node, FeatureState= CXC4012267 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nCategory M Access (FAJ 121 4658),\nCoverage-Triggered Inter-Frequency Session Continuity (FAJ 121 0797).\n\nLTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ca"
+  },
+  "abbrv": "FAJ1211817",
+  "fullname": "Cell Soft Lock",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CellSoftLock and License Control MO/Baseband-based Node, FeatureState= CXC4011378 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites (at least one should be activated):\nCoverage-Triggered CDMA-eHRPD Session Continuity (FAJ 121 0491)\nCoverage-Triggered GERAN Session Continuity (FAJ 121 0495)\nCoverage-Triggered Inter-Frequency Session Continuity (FAJ 121 0797)\nCoverage-Triggered TD-SCDMA Session Continuity (FAJ 121 3004)\nCoverage-Triggered WCDMA Session Continuity (FAJ 121 0493)\nand at least one of the below four features:\nCoverage-Triggered Inter-Frequency Handover (FAJ 121 0877)\nIntra-LTE Inter-Mode Handover (FAJ 121 3042)\nSRVCC Handover to GERAN (FAJ 121 3014)\nSRVCC Handover to UTRAN (FAJ 121 2027)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6cb"
+  },
+  "abbrv": "FAJ1210735",
+  "fullname": "Cell ID Based Location Support",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UePosCellId and License Control MO/Baseband-based Node, FeatureState= CXC4010841 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nIntra-LTE Handover (FAJ 121 0489)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6cc"
+  },
+  "abbrv": "FAJ1215090",
+  "fullname": "Cell Level Scheduler",
+  "definition": "is in package name :Differentiated Mobile Broadband ( FAJ 801 0409 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CellLevelScheduler and License Control MO/Baseband-based Node, FeatureState= CXC4012374 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "This feature provides the feasibility to set scheduler algorithm per specific group of cells.  This feature is designed based on ASGH, and feature is only suggested to be enabled for user that has these special requirements."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6cd"
+  },
+  "abbrv": "FAJ1213025",
+  "fullname": "Combined Cell",
+  "definition": "is in package name :Combined Cell ( FAJ 801 0407 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CombinedCell and License Control MO/Baseband-based Node, FeatureState= CXC4011368 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nIntelligent Power Emission Control (FAJ 121 5224)\nSupplemental Downlink for Carrier Aggregation (FAJ 121 3068)\nSupplemental Downlink with License-Assisted Access ( FAJ 121 4573)\n\nTo be activated when there is a need to use more sector carriers to cover an area that is not highly loaded with UEs. For relations to other features refer to CPI Feature Description.\n\nLTE ESS: The Combined Cell feature cannot be configured together with the LTE-NR Dynamic Spectrum Sharing feature on same cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ce"
+  },
+  "abbrv": "FAJ1214701",
+  "fullname": "Configurable SCell Priority",
+  "definition": "is in package name :Advanced Carrier Aggregation ( FAJ 801 0564 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ConfigurableScellPrio and License Control MO/Baseband-based Node, FeatureState= CXC4012097 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "To be activated when applying frequency layer prioritization and/or using Scell prioritization within a frequency layer. Refer to CPI Feature Description.\n\nLTE ESS: When ESS is used together with the Configurable SCell Priority feature, effective bandwidth computation does not take NR into account."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6cf"
+  },
+  "abbrv": "FAJ1215396",
+  "fullname": "Connected Users Optimization for Carrier Aggregation",
+  "definition": "is in package name :Advanced Carrier Aggregation ( FAJ 801 0564 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ConnectedUsersOptimizationCA and License Control MO/Baseband-based Node, FeatureState= CXC4012588 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nDynamic SCell Selection for Carrier Aggregation (FAJ 121 3063)\n\nFeature is recommended when connected users are limited by high number of configured Scells (when resource consumption hits caPreemptionThreshold attribute), examples: \n-G2 in MixedMode NR/LTE (only half of BB resources available for LTE users)\n- high number of SCells available (5CC-7CC) and many modern UEs with support of high aggregation levels which could lead to configuration of many Scells on node.\n\nLTE 5G Plugin/AAS: Not supported.\nLTE ESS: Not supported."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d0"
+  },
+  "abbrv": "FAJ1210495",
+  "fullname": "Coverage Triggered GERAN Session Continuity",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= GsmSessionContinuity and License Control MO/Baseband-based Node, FeatureState= CXC4010618 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Gives the option to handover to GERAN, either blind or measurement based or release with redirect RwR. For measurement configuration please refer to Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d1"
+  },
+  "abbrv": "FAJ1210797",
+  "fullname": "Coverage Triggered Inter Frequency Session Continuity",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InterFreqSessionContinuity and License Control MO/Baseband-based Node, FeatureState= CXC4010770 and featureState/Recommended Value =  ACTIVATED",
+  "others": "When active triggers measurements in poor coverage condition to help maintaining data session.  Mobility Control at Poor Coverage Feature (FAJ 121 3013) must be activated as a prerequisite. For measurement configuration please refer to Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d2"
+  },
+  "abbrv": "FAJ1215144",
+  "fullname": "Coverage Triggered Mobility at Setup",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CoverageTrigMobAtSetup and License Control MO/Baseband-based Node, FeatureState= CXC4012407 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "LTE sites coverage is poor and VOLTE call drop is high, but it has good GSM or WCDMA neighbour sites.\nPrerequisite: Feature CS Fallback to GERAN and UTRAN should be activated."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d3"
+  },
+  "abbrv": "FAJ1210493",
+  "fullname": "Coverage Triggered WCDMA Session Continuity",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= WcdmaSessionContinuity and License Control MO/Baseband-based Node, FeatureState= CXC4010616 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Gives the option to handover to UTRAN, either blind or measurement based or release with redirect RwR. For measurement configuration please refer to Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d4"
+  },
+  "abbrv": "FAJ1210856",
+  "fullname": "CS Fallback to GERAN and UTRAN",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= CsfbToGeranUtran and License Control MO/Baseband-based Node, FeatureState= CXC4010956 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites: at least one of the following features must be active:\nCoverage-Triggered GERAN Session Continuity (FAJ 121 0495)\nCoverage-Triggered TD-SCDMA Session Continuity (FAJ 121 3004)\nCoverage-Triggered WCDMA Session Continuity (FAJ 121 0493)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d5"
+  },
+  "abbrv": "FAJ1215116",
+  "fullname": "Data Aware Carrier Aggregation Configuration",
+  "definition": "is in package name :Advanced Carrier Aggregation ( FAJ 801 0564 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DataAwareCAConfiguration and License Control MO/Baseband-based Node, FeatureState= CXC4012383 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites: \nCarrier Aggregation (FAJ 121 3046)\nDynamic Scell Selection for Carrier Aggregation (FAJ 121 3063)\nUplink Carrier Aggregation (FAJ 121 4425)\n\nThe Data-Aware Carrier Aggregation Configuration feature can be used in scenarios where there are much uplink traffic.\n\nLTE 5G Plugin/EN-DC: Data-Aware Carrier Aggregation Configuration depends on Uplink Carrier Aggregation. Uplink Carrier Aggregation is blocked for EN-DC configured UEs. Data-Aware Carrier Aggregation Configuration is also blocked for EN-DC configured UEs."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d6"
+  },
+  "abbrv": "FAJ1211789",
+  "fullname": "Delay Based Scheduling and Grant Estimation",
+  "definition": "is in package name :Volte ( FAJ 801 0443 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DbsAndSabe and License Control MO/Baseband-based Node, FeatureState= CXC4011064 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nQoS-Aware Scheduler (FAJ 121 0859)\n\nMandatory Volte feature.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d7"
+  },
+  "abbrv": "FAJ1214680",
+  "fullname": "Differential Uplink Power Control",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DifferUlPowerControl and License Control MO/Baseband-based Node, FeatureState= CXC4012089 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "If high wideband uplink interference is time-variant, the preconfigured P0 cannot react in a timely fashion.To improve UL performance in such scenarios with high time-varying\ninterference, the SINR based UL closed-loop power control is required.\nRefer to CPI for detail information."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d8"
+  },
+  "abbrv": "FAJ1214368",
+  "fullname": "Differentiated UE Handling",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DifferentiatedUeHandling and License Control MO/Baseband-based Node, FeatureState= CXC4011951 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Conflicting:\nBasic Intelligent Connectivity (FAJ 121 4843)\n\nThe DRX settings are disabled for the EN-DC capable UE when it use DRX setting per IMEISV. Refer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6d9"
+  },
+  "abbrv": "FAJ1212053",
+  "fullname": "Downlink Frequency Selective Scheduling",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DlFss and License Control MO/Baseband-based Node, FeatureState= CXC4011255 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Restricted for 3MHz BW. Refer to CPI Feature Description\n\nLTE ESS: Supported with limitation. For normal ESS, UE may not get best PRBs due to NR allocations. FSS gains reduced in proportion with NR load but with PRB blanking and eFCB, DL FSS is not compitable."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6da"
+  },
+  "abbrv": "FAJ1215258",
+  "fullname": "Downlink Interference Randomization",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotDlInterfRandomization and License Control MO/Baseband-based Node, FeatureState= CXC4012508 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6db"
+  },
+  "abbrv": "FAJ1211748",
+  "fullname": "Dynamic GBR Admission Control",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DynamicGbrAdmCtrl and License Control MO/Baseband-based Node, FeatureState= CXC4011060 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Not mandatory for Volte, recommend to enable for robustness.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6dc"
+  },
+  "abbrv": "FAJ1213083",
+  "fullname": "Dynamic Load Control",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DynamicLoadControl and License Control MO/Baseband-based Node, FeatureState= CXC4011713 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6dd"
+  },
+  "abbrv": "FAJ1214377",
+  "fullname": "Dynamic PUCCH",
+  "definition": "is in package name :Uplink Spectrum Adaptations ( FAJ 801 0566 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DynamicPucch and License Control MO/Baseband-based Node, FeatureState= CXC4011955 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6de"
+  },
+  "abbrv": "FAJ1211749",
+  "fullname": "Dynamic QoS Modification",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DynamicQoSModification and License Control MO/Baseband-based Node, FeatureState= CXC4011061 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6df"
+  },
+  "abbrv": "FAJ1213063",
+  "fullname": "Dynamic SCell Selection for Carrier Aggregation",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DynamicScellSelection and License Control MO/Baseband-based Node, FeatureState= CXC4011559 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: This feature is required for the Basic Intelligent Connectivity feature.\nLTE carrier aggregation is not supported on the Master Node in EN-DC without the activation of the Dynamic SCell Selection for Carrier Aggregation LTE feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e0"
+  },
+  "abbrv": "FAJ1214301",
+  "fullname": "Dynamic UE Admission Control",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= DynamicUeAdmCtrl and License Control MO/Baseband-based Node, FeatureState= CXC4011940 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e1"
+  },
+  "abbrv": "FAJ1210801",
+  "fullname": "Efficient DRX/DTX for Connected UE",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Drx and License Control MO/Baseband-based Node, FeatureState= CXC4010912 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature. Refer to VoLTE Guidelines for configuration\n\nLTE 5G Plugin/EN-DC: The DRX settings are disabled for the EN-DC-capable UE when it uses the VoLTE service in case of a B1 measurement with gap.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e2"
+  },
+  "abbrv": "FAJ1211823",
+  "fullname": "Egress IP Traffic Shaping",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= TrafficManagement and License Control MO/Baseband-based Node, FeatureState= CXC4040005 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Feature can give priority between QoS classes, needed when resources in the transmission network are limited. Activation depends on operator policy. Not possible to provide recommended values for related MOM attributes. Please refer to CPI Feature Description and to relevant CPI guidelines."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e3"
+  },
+  "abbrv": "FAJ1214608",
+  "fullname": "Elastic RAN",
+  "definition": "is in package name :Elastic RAN ( FAJ 801 0568 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ElasticRAN and License Control MO/Baseband-based Node, FeatureState= CXC4012034 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "The Elastic RAN feature is an advanced solution for scenarios that require fast coordination. The Elastic RAN feature has special requirements regarding the transport network architecture. Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e4"
+  },
+  "abbrv": "FAJ1214856",
+  "fullname": "Elastic RAN Uplink Coordinated Multi Point Reception",
+  "definition": "is in package name :CoMP ( FAJ 801 0442 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ElasticRANUplinkComp and License Control MO/Baseband-based Node, FeatureState= CXC4012241 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nUplink Coordinated Multi-Point Reception (FAJ 121 3043)\nElastic RAN (FAJ 121 4608)\n\nLTE ESS: Not supported"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e5"
+  },
+  "abbrv": "FAJ1210921",
+  "fullname": "Emergency Call Handling for CS Fallback",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= EcsCsfb and License Control MO/Baseband-based Node, FeatureState= CXC4011034 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCS Fallback to GERAN and UTRAN (FAJ 121 0856)\nPSHO-Based CS Fallback to UTRAN (FAJ 121 3072)\nCS Fallback to CDMA 1X (FAJ 121 3036)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e6"
+  },
+  "abbrv": "FAJ1215243",
+  "fullname": "EN DC Triggered Handover during Connected Mode Mobility",
+  "definition": "is in package name :Intelligent Connectivity ( FAJ 801 1013 ) with License Control MO/DU radio Node,OptionalFeatureLicense= EndcTrigHoDuringConnModeMob and License Control MO/Baseband-based Node, FeatureState= CXC4012504 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: If the Basic Intelligent Connectivity feature is activated in the target node, Basic Intelligent Connectivity supports the EN-DC capable UE in setting up EN-DC after the handover of the UE, initiated by the EN-DC-Triggered Handover during Connected Mode Mobility feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e7"
+  },
+  "abbrv": "FAJ1215097",
+  "fullname": "EN DC Triggered Handover during Setup",
+  "definition": "is in package name :Intelligent Connectivity ( FAJ 801 1013 ) with License Control MO/DU radio Node,OptionalFeatureLicense= EndcTriggeredHoDuringSetup and License Control MO/Baseband-based Node, FeatureState= CXC4012381 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: If the Basic Intelligent Connectivity feature is activated in the target node, Basic Intelligent Connectivity supports the EN-DC capable UE in setting up EN-DC after the handover of the UE, initiated by the EN-DC-Triggered Handover during Setup."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e8"
+  },
+  "abbrv": "FAJ1214471",
+  "fullname": "Ericsson Lean Carrier",
+  "definition": "is in package name :Ericsson Lean Carrier ( FAJ 801 0567 ) with License Control MO/DU radio Node,OptionalFeatureLicense= EricssonLeanCarrier and License Control MO/Baseband-based Node, FeatureState= CXC4011984 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description for relations to other features.\n\nLTE 5G Plugin/EN-DC: When the EN-DC-capable UE uses the VoLTE service, the feature, as well as the DRX, is disabled for the UE in case of a B1 measurement with gap.\n\nLTE ESS: Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6e9"
+  },
+  "abbrv": "FAJ1214253",
+  "fullname": "Ethernet OAM Service",
+  "definition": "is in package name :TN Performance Monitoring ( FAJ 801 0441 ) with License Control MO/DU radio Node,OptionalFeatureLicense= EthernetOamService and License Control MO/Baseband-based Node, FeatureState= CXC4040014 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Feature can be useful in networks operated by multiple independent organizations. Not possible to provide recommended values for related MOM attributes. Refer to CPI Feature Description and to relevant CPI guidelines."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ea"
+  },
+  "abbrv": "FAJ1214274",
+  "fullname": "FDD and TDD on Same eNodeB",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= FddTddSameENodeB and License Control MO/Baseband-based Node, FeatureState= CXC4011930 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6eb"
+  },
+  "abbrv": "FAJ1214734",
+  "fullname": "Global SCell Evaluation",
+  "definition": "is in package name :Advanced Carrier Aggregation ( FAJ 801 0564 ) with License Control MO/DU radio Node,OptionalFeatureLicense= GlobalSCellEvaluation and License Control MO/Baseband-based Node, FeatureState= CXC4012111 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "If the number of allowed SCell candidates is larger than the highest enabled DL CA aggregation level.\n\nLTE 5G Plugin/EN-DC: This LTE feature is not used for SCell selection in LTE carrier aggregation for EN-DC."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ec"
+  },
+  "abbrv": "FAJ1214655",
+  "fullname": "Idle Mode Extended DRX",
+  "definition": "is in package name :M-IoT RAN on LTE Base Package ( FAJ 801 1000 ) with License Control MO/DU radio Node,OptionalFeatureLicense= IdleModeExtendedDrx and License Control MO/Baseband-based Node, FeatureState= CXC4012079 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ed"
+  },
+  "abbrv": "FAJ1212021",
+  "fullname": "IEEE 1588 Frequency Synchronization",
+  "definition": "is in package name :Frequency Synchronization ( FAJ 801 0414 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Synchronization.featureStatePtpFreq and License Control MO/Baseband-based Node, FeatureState= CXC4040007 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "The feature is one of the synchronization methods for LTE FDD deployments. No introduced MOM attributes, not possible to provide recommended values for related attributes. Please refer to CPI Feature Description and to CPI \"Network Synchronization Solution Guideline\""
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ee"
+  },
+  "abbrv": "FAJ1212022",
+  "fullname": "IEEE 1588 Time and Phase Synchronization",
+  "definition": "is in package name :Time and Phase Synchronization ( FAJ 801 0439 ) with License Control MO/DU radio Node,OptionalFeatureLicense= featureStatePtpTime and License Control MO/Baseband-based Node, FeatureState= CXC4040008 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "LTE 5G Plugin/EN-DC: Feature is recommended for LTE anchor cells in EN-DC deployments (NR non-standalone).\nAlso recommended for LTE TDD deployments and for Carrier aggregation scenarios. No introduced MOM attributes, not possible to provide recommended values for related attributes. Please refer to CPI Feature Description and to CPI \"Network Synchronization Solution Guideline\"."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ef"
+  },
+  "abbrv": "FAJ1214302",
+  "fullname": "Inactivity Triggered PUCCH Release at High Load",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InactTrigPUCCHRelAtHighLoad and License Control MO/Baseband-based Node, FeatureState= CXC4011941 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nEricsson Lean Carrier (FAJ 121 4471)\n\nThe Inactivity Triggered PUCCH Release at High Load feature can provide clear benefits in the event of PUCCH congestion. Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f0"
+  },
+  "abbrv": "FAJ1215118",
+  "fullname": "Incoming NR IRAT Handover",
+  "definition": "is in package name :Basic NR Mobility Support ( FAJ 801 1018 ) with License Control MO/DU radio Node,OptionalFeatureLicense= IncomingNrIratHandover and License Control MO/Baseband-based Node, FeatureState= CXC4012385 and featureState/Recommended Value =  ACTIVATED",
+  "others": "All network elements in the source and target core networks and RANs, as well as the LTE cell must be ready for IRAT handover from NR to LTE over the N26 interface."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f1"
+  },
+  "abbrv": "FAJ1215224",
+  "fullname": "Intelligent Power Emission Control",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PowerBackoff and License Control MO/Baseband-based Node, FeatureState= CXC4012486 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nAir Interface Load Generator (FAJ 121 0855)\nCategory M Access (FAJ 121 4658)\nCombined Cell (FAJ 121 3025)\nNB-IoT Access (FAJ 121 4657)\nMixed Mode Baseband (FAJ 121 4565)\nMixed Mode Radio (FAJ 121 0906)\nMulti-Operator RAN (FAJ 121 3055)\nRadio Resource Partitioning (FAJ 801 0570)\nShared LTE RAN (FAJ 121 0860)\n\nFeature can be used to decrese radio emiting power when regulatory requirements take effect."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f2"
+  },
+  "abbrv": "FAJ1214469",
+  "fullname": "Inter eNodeB Carrier Aggregation",
+  "definition": "is in package name :Advanced Carrier Aggregation ( FAJ 801 0564 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InterENBCarrierAggregation and License Control MO/Baseband-based Node, FeatureState= CXC4011983 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "DU: Recommended to be activated\nBB: Recommended to be activated when Elastic RAN isn’t enabled.\nRefer to CPI Feature Description for Feature dependencies"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f3"
+  },
+  "abbrv": "FAJ1213009",
+  "fullname": "Inter Frequency Load Balancing",
+  "definition": "is in package name :Multi-carrier Load Management ( FAJ 801 0427 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InterFrequencyLoadBalancing and License Control MO/Baseband-based Node, FeatureState= CXC4011319 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nCoverage-Triggered Inter-Frequency Handover (FAJ 121 0877)\nConflicting:\nAccess Class Barring.\n\nRefer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f4"
+  },
+  "abbrv": "FAJ1213061",
+  "fullname": "Inter Frequency Offload",
+  "definition": "is in package name :Inter-Vendor Load Management ( FAJ 801 0416 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InterFrequencyOffload and License Control MO/Baseband-based Node, FeatureState= CXC4011557 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nAccess Class Barring.\n\nRefer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f5"
+  },
+  "abbrv": "FAJ1213048",
+  "fullname": "Inter RAT Offload to WCDMA",
+  "definition": "is in package name :LTE Offload  to WCDMA ( FAJ 801 0421 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InterRatOffloadToUtran and License Control MO/Baseband-based Node, FeatureState= CXC4011478 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f6"
+  },
+  "abbrv": "FAJ1213059",
+  "fullname": "Internal MCE",
+  "definition": "is in package name :LTE Broadcast ( FAJ 801 0420 ) with License Control MO/DU radio Node,OptionalFeatureLicense= internalMce and License Control MO/Baseband-based Node, FeatureState= CXC4011555 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "LTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f7"
+  },
+  "abbrv": "FAJ1210858",
+  "fullname": "IPv6",
+  "definition": "is in package name :IPv6 ( FAJ 801 0418 ) with License Control MO/DU radio Node,OptionalFeatureLicense= InterfaceIPv6License and License Control MO/Baseband-based Node, FeatureState= CXC4040006 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Activation depends on operator policy. Not possible to provide recommended values for related MOM attributes. Please refer to CPI Feature Description and to relevant CPI guidelines."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f8"
+  },
+  "abbrv": "FAJ1211743",
+  "fullname": "Limited Service Mode Emergency Call Support",
+  "definition": "is in package name :Volte ( FAJ 801 0443 ) with License Control MO/DU radio Node,OptionalFeatureLicense= LsmEcs and License Control MO/Baseband-based Node, FeatureState= CXC4011055 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Limited Service Mode depends on if Emergency call over LTE is activated or not, hence it’s the operators choice and depends on the Core Network."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6f9"
+  },
+  "abbrv": "FAJ1214338",
+  "fullname": "Load Based Distribution at Release",
+  "definition": "is in package name :Multi-Carrier Load Management ( FAJ 801 0427 ) with License Control MO/DU radio Node,OptionalFeatureLicense= LoadBasedDistributionAtRelease and License Control MO/Baseband-based Node, FeatureState= CXC4011944 and featureState/Recommended Value =  ACTIVATED",
+  "others": "UE reselects according to received IMMCI. Prerequisite is CCTR for at least a week. The feature also works if frequency carriers are deployed on other vendor equipment. For configuration of load thresholds and frequency selection please refer to CPI Feature Description and Mobility Guideline."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6fa"
+  },
+  "abbrv": "FAJ1213021",
+  "fullname": "LTE Broadcast",
+  "definition": "is in package name :LTE Broadcast ( FAJ 801 0420 ) with License Control MO/DU radio Node,OptionalFeatureLicense= lteBroadcast and License Control MO/Baseband-based Node, FeatureState= CXC4011365 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nInternal MCE (FAJ 121 3059)\nClock Source over GPS (Part of LTE Base Package)\nIEEE 1588 Time and Phase Synchronization (FAJ 121 2022)\nSIB16 Time Information Broadcast (FAJ 121 3070)\nMBMS Multi-Carrier Support (FAJ 121 3062)\n\nLTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6fb"
+  },
+  "abbrv": "FAJ1213062",
+  "fullname": "MBMS Multi Carrier Support",
+  "definition": "is in package name :LTE Broadcast ( FAJ 801 0420 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MbmsMultiCarrier and License Control MO/Baseband-based Node, FeatureState= CXC4011558 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisite:\nInternal MCE(FAJ 121 3059)\nLTE Broadcast(FAJ 121 3021)\n\nLTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6fc"
+  },
+  "abbrv": "FAJ1213073",
+  "fullname": "Measurement Based CSFB Target Selection",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MeasBasedCsfbTargetSelection and License Control MO/Baseband-based Node, FeatureState= CXC4011664 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Requires CCTR cell trace. There is GERAN or UTRAN coverage, or both. For configuration detail refer to CPI Feature Description and Mobility Guideline."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6fd"
+  },
+  "abbrv": "FAJ1213094",
+  "fullname": "MIMO Sleep Mode",
+  "definition": "is in package name :Energy Efficiency ( FAJ 801 0413 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MimoSleepMode and License Control MO/Baseband-based Node, FeatureState= CXC4011808 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nTransmit Data Cloning (FAJ 121 1897)\nInter-eNodeB Carrier Aggregation (FAJ 121 4469)\n256-QAM Downlink (FAJ 121 4422)\nAir Interface Load Generator (FAJ 121 0855)\nSupplemental Downlink with License-Assisted Access (FAJ 121 4573)\n\nLTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6fe"
+  },
+  "abbrv": "FAJ1210920",
+  "fullname": "Minimum Rate Proportional Fair Scheduler",
+  "definition": "is in package name :Differentiated Mobile Broadband ( FAJ 801 0409 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Pfs and License Control MO/Baseband-based Node, FeatureState= CXC4011033 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: This LTE feature considers only the MCG radio resources of the Secondary Node terminated split DRBs.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea6ff"
+  },
+  "abbrv": "FAJ1214929",
+  "fullname": "Mission Critical Push to Talk",
+  "definition": "is in package name :Mission-Critical Services ( FAJ 121 1017 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MissionCriticalPushToTalk and License Control MO/Baseband-based Node, FeatureState= CXC4012287 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflict: VoLTE Rate Recommendation. For configuration, refer to CPI Feature Description.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea700"
+  },
+  "abbrv": "FAJ1210906",
+  "fullname": "Mixed Mode Radio",
+  "definition": "is in package name :Mixed Mode Radio Node LTE ( FAJ 801 0424 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MixedModeMixedModeRadioLTE and License Control MO/Baseband-based Node, FeatureState= CXC4011018 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nIntelligent Power Emission Control (FAJ 121 5224)\n\nLTE ESS: Mandatory. This feature is required for the LTE-NR Dynamic Spectrum Sharing feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea701"
+  },
+  "abbrv": "FAJ1214124",
+  "fullname": "Multi Layer Service Triggered Mobility",
+  "definition": "is in package name :Service-Based Mobility ( FAJ 801 0433 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MultiLayerServTriMobility and License Control MO/Baseband-based Node, FeatureState= CXC4011815 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCS Fallback to GERAN and UTRAN is active,\nMobility Control at Poor Coverage Feature (FAJ 121 3013).\n\nFor configuration detail refer to CPI Feature Description and Mobility Guideline."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea702"
+  },
+  "abbrv": "FAJ1213023",
+  "fullname": "Multi Target RRC Connection Re establishment",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MultiTargetRrcConnReest and License Control MO/Baseband-based Node, FeatureState= CXC4011366 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Not mandatory for Volte, recommend to enable for robustness.\n\nLTE 5G Plugin/EN-DC: The support for this LTE feature is limited because Packet Forwarding for Secondary Node terminated DRBs is not supported during RRC connection re-establishment."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea703"
+  },
+  "abbrv": "FAJ1214780",
+  "fullname": "Multiple GNSS Support",
+  "definition": "is in package name :Time and Phase Synchronization ( FAJ 801 0439 ) with License Control MO/DU radio Node,OptionalFeatureLicense= featureStateMultipleGnss and License Control MO/Baseband-based Node, FeatureState= CXC4040019 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Activation depends on operator policy. Not possible to provide recommended values for related MOM attributes. Limitations and requirements on GNSS receiver are described in CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea704"
+  },
+  "abbrv": "FAJ1210549",
+  "fullname": "Multiple Radio Bearers per User",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= MultiErabsPerUser and License Control MO/Baseband-based Node, FeatureState= CXC4010723 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea705"
+  },
+  "abbrv": "FAJ1214657",
+  "fullname": "NB IoT Access",
+  "definition": "is in package name :M-IoT RAN on LTE Base Package ( FAJ 801 1000 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NarrowbandIoTAccess and License Control MO/Baseband-based Node, FeatureState= CXC4012081 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Conflicting:\neMBMS (FAJ 121 3022),\nMicro Sleep Tx (FAJ 121 3089),\nPsi-Coverage (FAJ 121 4186),\nIntelligent Power Emission Control (FAJ 121 5224)\n\nLTE Massive IoT: Mandatory for NB-IoT. Enables NB-IoT support."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea706"
+  },
+  "abbrv": "FAJ1215169",
+  "fullname": "NB IoT Dynamic Random Access Backoff",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotDynamicRaBackoff and License Control MO/Baseband-based Node, FeatureState= CXC4012451 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)\n\nLTE Massive IoT: The NB-IoT Dynamic Random Access Backoff feature can be used in scenarios with high random access load. Refer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea707"
+  },
+  "abbrv": "FAJ1215061",
+  "fullname": "NB IoT Enhanced Cell ID Location Support",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotECIDLocationSupport and License Control MO/Baseband-based Node, FeatureState= CXC4012366 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)\n\nLTE Massive IoT: Improves positioning accuracy.\nE-SMLC version supporting E-CID is needed to support NB-IoT UEs for E-CID.\n\nThe NB-IoT Enhanced Cell ID Location Support feature can support UE positioning by using E-CID method for UE which does not support LPP. \nRefer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea708"
+  },
+  "abbrv": "FAJ1215129",
+  "fullname": "NB IoT Extended Cell Range",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotExtendedCellRange and License Control MO/Baseband-based Node, FeatureState= CXC4012405 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657),\nNB-IoT 100 km Coverage (FAJ 121 4886)\n\nLTE Massive IoT: If cellRange is larger than 100km, NB-IoT Extended Cell Range feature must be activated."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea709"
+  },
+  "abbrv": "FAJ1214892",
+  "fullname": "NB IoT Extended Transport Block Size",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ExtendedTransportBlockSize and License Control MO/Baseband-based Node, FeatureState= CXC4012262 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)\n\nLTE Massive IoT: 3GPP Rel-14 Category NB2 UE can be benefit from this feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea70a"
+  },
+  "abbrv": "FAJ1214897",
+  "fullname": "NB IoT Load Distribution",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotLoadDistribution and License Control MO/Baseband-based Node, FeatureState= CXC4012266 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)\n\nLTE Massive IoT: To active this feature, mom attributes: NbIdleModeLoadDistr.nbCarrierFreqList and NbIdleModeLoadDistr.nbFreqDistributionList need to be configured properly, which is explained in CPI: Configure NB-IoT Load Distribution"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea70b"
+  },
+  "abbrv": "FAJ1215150",
+  "fullname": "NB IoT Multiple Non Anchor Carriers",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotMultipleNonAnchorCarriers and License Control MO/Baseband-based Node, FeatureState= CXC4012413 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657),\nNB-IoT Non-Anchor Carrier Support (FAJ 121 4893).\n\nLTE Massive IoT: The NB-IoT Multiple Non-Anchor Carriers feature can be used in NB-IoT high load scenario in which cell load is high and NB-IoT users are located in good coverage level and support multi-carrier capability."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea70c"
+  },
+  "abbrv": "FAJ1214893",
+  "fullname": "NB IoT Non Anchor Carrier Support",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotNonAnchorCarrierSupport and License Control MO/Baseband-based Node, FeatureState= CXC4012263 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)\n\nLTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea70d"
+  },
+  "abbrv": "FAJ1215350",
+  "fullname": "NB IoT Optimized UE Power Control",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotOptimizedUePowerControl and License Control MO/Baseband-based Node, FeatureState= CXC4012566 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisite: \nNB-IoT Access (FAJ 121 4657)\n\nThe NB-IoT Optimized UE Power Control feature can be enabled in scenarios where there are high downlink and uplink load. Refer to CPI Feature Description\n\nLTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea70e"
+  },
+  "abbrv": "FAJ1215156",
+  "fullname": "NB IoT Release Assistance Indicator",
+  "definition": "is in package name :Services and Performance ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotReleaseAssistanceInd and License Control MO/Baseband-based Node, FeatureState= CXC4012418 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nNB-IoT Access (FAJ 121 4657)\n\nLTE Massive IoT: This feature allows NB-IoT Ues with release assistance indicator support to help eNodeBs to release connection more quickly."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea70f"
+  },
+  "abbrv": "FAJ1215266",
+  "fullname": "NB IoT Two HARQ Processes",
+  "definition": "is in package name :LTE Value Package ( FAJ 801 1004 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NbIotTwoHarqProcesses and License Control MO/Baseband-based Node, FeatureState= CXC4012516 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites: \nNB-IoT Access (FAJ 121 4657)\nNB-IoT Extended Transport Block Size (FAJ 121 4892)\n\nLTE Massive IoT."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea710"
+  },
+  "abbrv": "FAJ1213096",
+  "fullname": "Non planned PCI Range",
+  "definition": "is in package name :Non-Planned PCI Range ( FAJ 801 0428 ) with License Control MO/DU radio Node,OptionalFeatureLicense= NonPlannedPCIRange and License Control MO/Baseband-based Node, FeatureState= CXC4011810 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nIntra-LTE Handover (FAJ 121 0489)\nCoverage-Triggered Inter-Frequency Handover (FAJ 121 0877)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea711"
+  },
+  "abbrv": "FAJ1211892",
+  "fullname": "Operator Defined QCI",
+  "definition": "is in package name :Differentiated Mobile Broadband ( FAJ 801 0409 ) with License Control MO/DU radio Node,OptionalFeatureLicense= OperatorDefinedQci and License Control MO/Baseband-based Node, FeatureState= CXC4011163 and featureState/Recommended Value =  ACTIVATED",
+  "others": "No recommendations provided for Mo Class QciProfileOperatorDefined. For parameters under MO class QciProfilePredefined, default values are set by the system per QCI according to 3GPP TS 23.203. Refer to VoLTE Guidelines, Manage Quality of Service and E2E QoS Guidelines."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea712"
+  },
+  "abbrv": "FAJ1215223",
+  "fullname": "Optimized RRC Connection Release Control",
+  "definition": "is in package name :Spectral Efficiency ( FAJ 801 1015 ) with License Control MO/DU radio Node,OptionalFeatureLicense= OptRrcConnectionReleaseCtrl and License Control MO/Baseband-based Node, FeatureState= CXC4012485 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Recommended to activate the feature at high load scenarios. Faster release procedure has benefits as described in the Feature Description. Note that Category M connections are also impacted by this feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea713"
+  },
+  "abbrv": "FAJ1210862",
+  "fullname": "OTDOA User Plane Location Support",
+  "definition": "is in package name :Location Support ( FAJ 801 0419 ) with License Control MO/DU radio Node,OptionalFeatureLicense= OtdoaSupl and License Control MO/Baseband-based Node, FeatureState= CXC4010962 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nClock Source over GPS (Part of LTE Base Package)\nIEEE 1588 Time and Phase Synchronization (FAJ 121 2022)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea714"
+  },
+  "abbrv": "FAJ1213078",
+  "fullname": "Overlaid Cell Detection",
+  "definition": "is in package name :Self-Organizing Networks ( FAJ 801 0435 ) with License Control MO/DU radio Node,OptionalFeatureLicense= OverlaidCellDetection and License Control MO/Baseband-based Node, FeatureState= CXC4011699 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea715"
+  },
+  "abbrv": "FAJ1211800",
+  "fullname": "Packet Forwarding at S1 Handover",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= S1HoDataFwd and License Control MO/Baseband-based Node, FeatureState= CXC4011075 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Requires RLC in Unacknowledged Mode (UM).  For packet HO configuration and forwarding per QCI please refer to Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea716"
+  },
+  "abbrv": "FAJ1213057",
+  "fullname": "PDCCH Power Boost",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PdcchPowerBoost and License Control MO/Baseband-based Node, FeatureState= CXC4011515 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea717"
+  },
+  "abbrv": "FAJ1213099",
+  "fullname": "PHICH Group Spreading",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PhichGroupSpreading and License Control MO/Baseband-based Node, FeatureState= CXC4011813 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Not mandatory for Volte, recommend to enable for robustness."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea718"
+  },
+  "abbrv": "FAJ1214916",
+  "fullname": "PLMN Specific Access Barring",
+  "definition": "is in package name :Mission Critical High Load Handling ( FAJ 801 1016 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PLMNSpecificAccessBarring and License Control MO/Baseband-based Node, FeatureState= CXC4012278 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "The PLMN-Specific Access Barring feature allows to prioritize barring of different PLMNs in high load scenarios. It has conflicts with Inter-Frequency Offload. Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea719"
+  },
+  "abbrv": "FAJ1213085",
+  "fullname": "Prescheduling",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Prescheduling and License Control MO/Baseband-based Node, FeatureState= CXC4011715 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Conflicting:\nEricsson Lean Carrier (FAJ 121 4471)\n\nThe Prescheduling feature and Ericsson Lean Carrier feature cannot be enabled simultaneously.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea71a"
+  },
+  "abbrv": "FAJ1215187",
+  "fullname": "Prioritized Call Queuing at High Load",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PrioCallQueueHighLoad and License Control MO/Baseband-based Node, FeatureState= CXC4012457 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nDynamic UE Admission Control (FAJ 121 4301)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea71b"
+  },
+  "abbrv": "FAJ1215342",
+  "fullname": "Prioritized Mobile Terminating Access at High Load",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PrioritizedMTAccessAtHighLoad and License Control MO/Baseband-based Node, FeatureState= CXC4012561 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisite: \nDynamic UE Admission Control (FAJ 121 4301)\nRelated: \nEnhanced Dynamic UE Admission Control for Privileged Access (FAJ 121 5229)\nEnhanced PTT Admission Control (FAJ 121 5018)\nPrioritized Call Queuing at High Load (FAJ 121 5187)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea71c"
+  },
+  "abbrv": "FAJ1214300",
+  "fullname": "Prioritized SR scheduling",
+  "definition": "is in package name :High Load Handling ( FAJ 801 0415 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PrioritizedSrScheduling and License Control MO/Baseband-based Node, FeatureState= CXC4011938 and featureState/Recommended Value =  ACTIVATED",
+  "others": "ESS. Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea71d"
+  },
+  "abbrv": "FAJ1214917",
+  "fullname": "Progressive Barring For Special Access Classes",
+  "definition": "is in package name :Mission-Critical High Load Handling ( FAJ 801 1016 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ProgressiveBarringForSpecAC and License Control MO/Baseband-based Node, FeatureState= CXC4012279 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nLoad-Based Access Barring (FAJ 121 3093)\nProgressive Access Barring (FAJ 121 4746)\nConflicting:\nInter-Frequency Load Balancing (FAJ 121 3009)\nInter-Frequency Offload (FAJ 121 3061)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea71e"
+  },
+  "abbrv": "FAJ1213072",
+  "fullname": "PSHO Based CS Fallback to UTRAN",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= PshoBasedCsfbToUtran and License Control MO/Baseband-based Node, FeatureState= CXC4011663 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCS Fallback to GERAN and UTRAN active to carry the voice calls.\n\nANR is configured with periodic UTRAN measurements and has UE dependency."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea71f"
+  },
+  "abbrv": "FAJ1210859",
+  "fullname": "QoS Aware Scheduler",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= QosAwareScheduler and License Control MO/Baseband-based Node, FeatureState= CXC4010959 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea720"
+  },
+  "abbrv": "FAJ1214571",
+  "fullname": "Radio Resource Partitioning",
+  "definition": "is in package name :RAN Slicing ( FAJ 801 1015 ) with License Control MO/DU radio Node,OptionalFeatureLicense= RadioResourcePartitioning and License Control MO/Baseband-based Node, FeatureState= CXC4012019 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description.\n\nLTE ESS: Supported with limitation. In ESS-LTE cell the resource utilization of a certain partition will be under-estimated if NR (PRB) usage is not accounted for. This will create the effect that higher priority partition will continue to occupy the resources longer if threshold is not set properly"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea721"
+  },
+  "abbrv": "FAJ1213027",
+  "fullname": "Real Time Security Event Logging",
+  "definition": "is in package name :Secure OAM & security logging ( FAJ 801 0432 ) with License Control MO/DU radio Node,OptionalFeatureLicense= RealTimeSecLog and License Control MO/Baseband-based Node, FeatureState= CXC4040010 and featureState/Recommended Value =  ACTIVATED",
+  "others": "The feature captures real-time security events in the NW. Not possible to provide recommended values for related MOM attributes. Please refer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea722"
+  },
+  "abbrv": "FAJ1210876",
+  "fullname": "Redirect with System Information",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= RedirectWithNacc and License Control MO/Baseband-based Node, FeatureState= CXC4010973 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nRIM association,\nCoverage-Triggered Geran Session Continuity (FAJ 121 0495),\nCoverage-Triggered WCDMA CS (FAJ 121 0493),\nCoverage-Triggered TD-SCDMA SC (FAJ 121 3004),\nCS Fallback to GERAN and UTRAN (FAJ 121 0856).\n\nFor RIM optimization and cell prioritization refer to LTE Mobility Guideline and Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea723"
+  },
+  "abbrv": "FAJ1212037",
+  "fullname": "Relative Priority Scheduling",
+  "definition": "is in package name :Differentiated Mobile Broadband ( FAJ 801 0409 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Rps and License Control MO/Baseband-based Node, FeatureState= CXC4011251 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea724"
+  },
+  "abbrv": "FAJ1210861",
+  "fullname": "RLC in Unacknowledged Mode",
+  "definition": "is in package name :Volte ( FAJ 801 0443 ) with License Control MO/DU radio Node,OptionalFeatureLicense= RlcUm and License Control MO/Baseband-based Node, FeatureState= CXC4010961 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature. Refer to VoLTE Guidelines for configuration"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea725"
+  },
+  "abbrv": "FAJ1210892",
+  "fullname": "Robust Header Compression",
+  "definition": "is in package name :Volte ( FAJ 801 0443 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Rohc and License Control MO/Baseband-based Node, FeatureState= CXC4010990 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea726"
+  },
+  "abbrv": "FAJ1213087",
+  "fullname": "Service or Priority Triggered Inter Frequency Handover",
+  "definition": "is in package name :Service-Based Mobility ( FAJ 801 0433 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ServOrPrioTriggeredIFHo and License Control MO/Baseband-based Node, FeatureState= CXC4011736 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCoverage-Triggered Inter-Frequency Handover (FAJ 121 0877),\nMultiple Radio Bearers per User per User (FAJ 121 0549).\n\nFor configuration detail refer to CPI Feature Description and Mobility Guideline.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea727"
+  },
+  "abbrv": "FAJ1213011",
+  "fullname": "Service Specific DRX",
+  "definition": "is in package name :Volte ( FAJ 801 0443 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ServiceSpecificDrx and License Control MO/Baseband-based Node, FeatureState= CXC4011327 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Conflicting:\nBasic Intelligent Connectivity (FAJ 121 4843)\n\nMandatory Volte feature. For feature dependencies, refer to Feature Description. All dependencies are handled gracefully, with one of the features taking precendence.\n\nLTE 5G Plugin/EN-DC: The DRX settings are disabled for the EN-DC-capable UE when it uses the VoLTE service in case of a B1 measurement with gap.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea728"
+  },
+  "abbrv": "FAJ1214246",
+  "fullname": "Service Specific Inactivity Timer",
+  "definition": "is in package name :Volte ( FAJ 801 0443 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ServiceSpecificInactivityTimer and License Control MO/Baseband-based Node, FeatureState= CXC4011918 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory VoLTE feature, when using SRVCC in alerting phase"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea729"
+  },
+  "abbrv": "FAJ1213047",
+  "fullname": "Service Specific Load Management",
+  "definition": "is in package name :Service-Based Mobility ( FAJ 801 0433 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ServiceSpecificLoadMgmt and License Control MO/Baseband-based Node, FeatureState= CXC4011477 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\none of the following must be active:\nInter-RAT Offload to WCDMA,\nInter-Frequency Load Balancing or IFO.\n\nFeature design specifically to protect VoLTE calls from being selected for LB.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea72a"
+  },
+  "abbrv": "FAJ1211747",
+  "fullname": "Service Triggered Mobility",
+  "definition": "is in package name :Service-Based Mobility ( FAJ 801 0433 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ServiceTriggeredMobility and License Control MO/Baseband-based Node, FeatureState= CXC4011059 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Enables coverage-triggered mobility based on the QoS defined for the UE bearers. For configuration detail please refer to Feature Description and Mobility Guideline.\n\nLTE ESS: Refer to CPI LTE-NR Dynami Spectrum Sharing description for details about the relations."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea72b"
+  },
+  "abbrv": "FAJ1214645",
+  "fullname": "Service Specific HARQ",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= ServiceSpecificHARQ and License Control MO/Baseband-based Node, FeatureState= CXC4012070 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Not mandatory for Volte, recommend to enable for robustness."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea72c"
+  },
+  "abbrv": "FAJ1211819",
+  "fullname": "SGW Relocation at X2 Handover",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= SgwRelocationAtX2Handover and License Control MO/Baseband-based Node, FeatureState= CXC4011479 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Conflicting:\nVirtual Packet Processing (FAJ 121 4774)"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea72d"
+  },
+  "abbrv": "FAJ1213070",
+  "fullname": "SIB16 Time Information Broadcast",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= timeInfoSIB16 and License Control MO/Baseband-based Node, FeatureState= CXC4011618 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nClock Source over GPS (Part of LTE Base Package)\nIEEE 1588 Time and Phase Synchronization (FAJ 121 2022)\n\nLTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea72e"
+  },
+  "abbrv": "FAJ1211788",
+  "fullname": "Subscriber Triggered mobility",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= SpidRATFreqPrio and License Control MO/Baseband-based Node, FeatureState= CXC4011063 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "User priority and throughput based on the user profile. Prerequisites is Subscriber Profile ID SPID in CN.  For subscription configuration detail please refere to Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea72f"
+  },
+  "abbrv": "FAJ1213068",
+  "fullname": "Supplemental Downlink for Carrier Aggregation",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= SupplementaryDlOnlyCell and License Control MO/Baseband-based Node, FeatureState= CXC4011567 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nCarrier Aggregation (FAJ 121 3046)\nConflicting:\nCategory M Access (FAJ 121 4658)\nNB-IoT Access (FAJ 121 4657)\nCombined Cell (FAJ 121 3025)\nLTE-NR Dynamic Spectrum Sharing\n\nLTE ESS: The Supplemental Downlink for Carrier Aggregation feature cannot be configured together with the LTE-NR Dynamic Spectrum Sharing feature on same cell. Supported on non-ESS LTE on same node.\n\nLTE Massive IoT: The Supplemental Downlink for Carrier Aggregation (FAJ FAJ 121 3068) feature must not be activated together with the Category M Access feature."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea730"
+  },
+  "abbrv": "FAJ1214573",
+  "fullname": "Supplemental Downlink with License Assisted Access",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= SdlCarrierAggregationInLaa and License Control MO/Baseband-based Node, FeatureState= CXC4012020 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nCarrier Aggregation (FAJ 121 3046)\nSupplemental Downlink for Carrier Aggregation (FAJ 121 3068)\nDynamic SCell Selection for Carrier Aggregation (FAJ 121 3063)\nConflicting:\nCombined Cell (FAJ 121 3025)\nEricsson Lean Carrier (FAJ 121 4471)\n\nLAA shall be activated when CA in DL needs more channel resources. Ericsson Lean Carrier feature has a negative impact on LAA and should not be enabled in an LAA cell. Refer to CPI Feature Description for Feature dependencies.\n\nESS. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea731"
+  },
+  "abbrv": "FAJ1213024",
+  "fullname": "Synchronous Ethernet",
+  "definition": "is in package name :Frequency Synchronization ( FAJ 801 0414 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Synchronization.featureStateSyncEth and License Control MO/Baseband-based Node, FeatureState= CXC4040011 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "The feature is one of the synchronization methods for LTE FDD deployments. Feature can be used as assisting reference for Assisted Time Holdover. Activation depends on operator policy. Not possible to provide recommended values for related MOM attributes. Please refer to CPI Feature Description and to CPI \"Network Synchronization Solution Guideline\"."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea732"
+  },
+  "abbrv": "FAJ1211713",
+  "fullname": "TCP Optimization",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= TcpOptimization and License Control MO/Baseband-based Node, FeatureState= CXC4011050 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Mandatory Volte feature. Refer to VoLTE Guidelines for configuration"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea733"
+  },
+  "abbrv": "FAJ1215385",
+  "fullname": "TM8 Downlink Single User MIMO on TDD SCell",
+  "definition": "is in package name :Basic Massive MIMO ( FAJ 801 1010 ) with License Control MO/DU radio Node,OptionalFeatureLicense= TM8DlSingleUserMIMOOnTDDSCell and License Control MO/Baseband-based Node, FeatureState= CXC4012585 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Prerequisites:\nBasic AAS for TDD (FAJ 121 4882)\nCarrier Aggregation (FAJ 121 3046)\nDynamic SCell Selection for CarrierAggregation (FAJ 121 3063)\n\nFor the operation of the feature, the EUtranCellTDD.transmissionMode attribute must be set to TM3 or TM8"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea734"
+  },
+  "abbrv": "FAJ1214575",
+  "fullname": "Transport Path Characterist Monitoring",
+  "definition": "is in package name :TN Performance Monitoring ( FAJ 801 0441 ) with License Control MO/DU radio Node,OptionalFeatureLicense= TransportPathCharMonitoring and License Control MO/Baseband-based Node, FeatureState= CXC4012022 and featureState/Recommended Value =  ACTIVATED",
+  "others": "Feature strongly recommended to be Activated, in order to enable quick usage when needed, e.g. during troubleshooting of IP network performance.\nNot possible to provide recommended values for related MOM attributes. Refer to CPI Feature Description and to relevant CPI guidelines. Note: The GTP-U Supervision and Transport Path Characteristics Monitoring  are related features, responsible for the same functions."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea735"
+  },
+  "abbrv": "FAJ1212051",
+  "fullname": "TTI Bundling",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= TtiBundling and License Control MO/Baseband-based Node, FeatureState= CXC4011253 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Not mandatory for Volte, recommend to enable for Coverage Enhancing. Prerequisite: QoS-Aware Scheduler. Limitation: only FDD. Refer to VoLTE Guidelines for configuration\n\nLTE 5G Plugin/EN-DC: If the TTI Bundling LTE feature is activated for any established DRBs, Secondary Node terminated split DRBs cannot be set up."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea736"
+  },
+  "abbrv": "FAJ1211791",
+  "fullname": "Two Way Active Measurement Protocol Responder",
+  "definition": "is in package name :TN Performance Monitoring ( FAJ 801 0441 ) with License Control MO/DU radio Node,OptionalFeatureLicense= Ippm.featureStateTwampResponder and License Control MO/Baseband-based Node, FeatureState= CXC4040009 and featureState/Recommended Value =  ACTIVATED",
+  "others": "The feature enables the Radio Node to act as one or more logical TWAMP. Feature is strongly recommended to be Activated, in order to enable quick usage when needed, e.g. during troubleshooting of Transport Network performance for X2 interfaces. Not possible to provide recommended values for related MOM attributes. Related to TWAMP Initiator (FAJ 121 4557). Refer to CPI Feature Description."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea737"
+  },
+  "abbrv": "FAJ1214219",
+  "fullname": "UE Throughput Aware IFLB",
+  "definition": "is in package name :Multi-Carrier Load Management ( FAJ 801 0427 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UeThroughputAwareIflb and License Control MO/Baseband-based Node, FeatureState= CXC4011911 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: When using this LTE feature, load balancing can be disabled for the EN-DC-capable UEs without Secondary Node terminated split DRBs. It is always disabled for UEs with Secondary Node terminated split DRBs."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea738"
+  },
+  "abbrv": "FAJ1214425",
+  "fullname": "Uplink Carrier Aggregation",
+  "definition": "is in package name :Carrier Aggregation ( FAJ 801 0405 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UplinkCarrierAggregation and License Control MO/Baseband-based Node, FeatureState= CXC4011973 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: The UL Carrier Aggregation LTE feature is blocked for the EN-DC connection."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea739"
+  },
+  "abbrv": "FAJ1211799",
+  "fullname": "Uplink Frequency Selective Scheduling",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UlFss and License Control MO/Baseband-based Node, FeatureState= CXC4011074 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Refer to CPI Feature Description\n\nLTE ESS: Supported with limitation. UE may not get best PRBs due to NR allocations. FSS gains reduced in proportion with NR load."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea73a"
+  },
+  "abbrv": "FAJ1214157",
+  "fullname": "Uplink Interference Reporting",
+  "definition": "is in package name :RAN Data Collection ( FAJ 801 0431 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UlInterferenceReporting and License Control MO/Baseband-based Node, FeatureState= CXC4011820 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE ESS: To be disabled on ESS cell. Supported on non-ESS LTE on same node."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea73b"
+  },
+  "abbrv": "FAJ1215044",
+  "fullname": "Uplink Traffic Triggered Mobility",
+  "definition": "is in package name :Differentiated Mobile Broadband ( FAJ 801 0409 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UplinkTrafficTriggeredMobility and License Control MO/Baseband-based Node, FeatureState= CXC4012352 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites: \nCoverage-Triggered Inter-Frequency Handover (FAJ 121 0877)\nIntra-LTE Handover (FAJ121 0489)\nThis feature can be activated in the scenario of TDD and FDD mixed network. Refer to CPI for Feature Operation."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea73c"
+  },
+  "abbrv": "FAJ1211797",
+  "fullname": "Uplink Triggered Inter Frequency Mobility",
+  "definition": "is in package name :LTE Base Package ( FAJ 801 0400 ) with License Control MO/DU radio Node,OptionalFeatureLicense= UlTrigInterFreqMob and License Control MO/Baseband-based Node, FeatureState= CXC4011072 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "The Uplink-Triggered Inter-Frequency Mobility feature can be used in scenarios where there are uplink problems. Refer to CPI Feature Description"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea73d"
+  },
+  "abbrv": "FAJ1214224",
+  "fullname": "VoLTE Frequency Hopping",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= VolteFrequencyHopping and License Control MO/Baseband-based Node, FeatureState= CXC4011914 and featureState/Recommended Value =  SCENARIO_DEPENDENT",
+  "others": "Prerequisites:\nTTI-Bundling\n\nNot mandatory for Volte, recommend to enable for Coverage Enhancing. Limitation: only FDD.  Refer to VoLTE Guidelines for configuration"
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea73e"
+  },
+  "abbrv": "FAJ1215181",
+  "fullname": "VoLTE Inactivity Timer Extension",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= VolteInactivityTimerExtension and License Control MO/Baseband-based Node, FeatureState= CXC4012453 and featureState/Recommended Value =  DEACTIVATED",
+  "others": "Only activated for benchmarking and UE testing and deactivated once completed."
+},
+{
+  "_id": {
+    "$oid": "640f27d5e2065d2cebbea73f"
+  },
+  "abbrv": "FAJ1214884",
+  "fullname": "VoLTE Optimized Carrier Aggregation",
+  "definition": "is in package name :VoLTE Performance ( FAJ 801 0444 ) with License Control MO/DU radio Node,OptionalFeatureLicense= VoLTEOptimizedCA and License Control MO/Baseband-based Node, FeatureState= CXC4012259 and featureState/Recommended Value =  ACTIVATED",
+  "others": "LTE 5G Plugin/EN-DC: When VoLTE Optimized Carrier Aggregation is used with Basic Intelligent Connectivity, the following values of the EUtranCellFDD.sCellHandlingAtVolteCall or the EUtranCellTDD.sCellHandlingAtVolteCall attribute affect carrier aggregation behavior in EN-DC:\n- DECONF_SCELLS\n- DECONF_UL_SUPPRESS_DL_SCELLS"
+}]
