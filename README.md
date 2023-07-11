@@ -13,7 +13,7 @@ rasa train
 (rasaenv) C:\Users\User\Chatbot>rasa shell
 Or 
 interface html :  rasa run --m models --enable-api --cors "*"
-N.B. Une connexion Wifi doit être établie
+N.B. Internet connexion must be available
 
 2. Lunch CMD command
 cmd2
