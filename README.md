@@ -1,6 +1,9 @@
 # Chatbot-for-network-Optimization
 Project : Chatbot for network Optimization assistance
 
+
+Install Python 3.9.13 and Anaconda 22.11.1.
+
 Copy project under (Chatbot directory) under C:\Users\User>
 Replace defaul path User C:\Users\User>
 
