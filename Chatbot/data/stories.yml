@@ -1,0 +1,113 @@
+version: "3.1"
+
+stories:
+
+
+- story: definition_path 
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_help_definition
+  - action: Action_Validate_feature
+  - action: utter_another_def
+
+- story: problem_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_problem
+    entities:
+    - problem: LTE Intra/Inter Frequency
+  - action: action_problem_solve
+  - slot_was_set:
+    - problem: LTE Intra/Inter Frequency
+
+- story: another_definition_path_1
+  steps: 
+  - action: utter_another_def
+  - intent: affirm
+  - action: utter_ask_def
+  - intent: ask_help_definition
+  - action: Action_Validate_feature
+  - action: utter_another_def 
+  
+- story: another_definition_path _2
+  steps: 
+  - action: utter_another_def
+  - intent: deny
+  - action: utter_happy
+
+- story: validating counter values
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_problem
+  - action: action_problem_solve
+  - intent: affirm
+  - action: action_Info_Problem
+
+- story: validating counter values 2
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_problem
+  - action: action_problem_solve
+  - intent: deny
+  - action: utter_happy
+
+- story: check counter solutions
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: Site_Solution_Ask
+  - action: action_Site_Problem
+  - intent: Site_Questions
+  - action: utter_reseau_phy_slots
+
+- story: check counter solutions
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: Site_Classify_Ask
+  - action: action_classify_site_ML
+
+
+- story: Make a traffic prediction
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: predict_traffic_ML
+    entities:
+      - site: 4G_Ain_Boumorra
+  - action: action_predict_traffic_ML
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_about_reseau_phy
+  - action: action_site_info
+  - intent: Site_Questions
+  - action: utter_reseau_phy_slots
+
+- story: add_physical_network 
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: add_phy_net
+  - action: utter_adding_phy_net
+
+- story: guide user through decision tree
+  steps:
+  - action: utter_welcome
+  - intent: decision_tree
+  - action: action_decision_tree
+  - action: action_listen
+  - intent: choose_option
+  - action: action_decision_tree
+
+
+#- story: interactive_story_1
+#  steps:
+#  - intent: Site_Solution_Ask
+#  - action: action_Site_Problem

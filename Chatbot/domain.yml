@@ -1,0 +1,110 @@
+version: '3.1'
+intents:
+- Site_Classify_Ask
+- Site_Questions
+- Site_Solution_Ask
+- add_phy_net
+- affirm
+- ask_add_def
+- ask_add_definition
+- ask_definition
+- ask_for_reseau_phy
+- ask_help_definition
+- bot_challenge
+- choose_option
+- decision_tree
+- deny
+- give_full_definition
+- goodbye
+- greet
+- inform_about_reseau_phy
+- inform_problem
+- inform_problem_ML
+- predict_traffic_ML
+entities:
+- site
+- problem
+- option:
+    type: text
+- decision_tree_type:
+    type: text
+slots:
+  definition:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      intent: ask_help_definition
+  problem:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: problem
+  site:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: site
+  selected_option:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: option
+  decision_tree_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: decision_tree_type
+actions:
+- Action_Validate_feature
+- action_Info_Problem
+- action_Site_Problem
+- action_classify_site_ML
+- action_decision_tree
+- action_predict_traffic_ML
+- action_problem_solve
+- action_problem_solve_ML
+- action_reset_all_slots
+- action_site_info
+- inform_problem_ML
+- utter_another_def
+- utter_ask_def
+- utter_def_added
+- utter_did_that_help
+- utter_greet
+- utter_happy
+- utter_reseau_phy_slots
+responses:
+  utter_greet:
+  - text: Hey I'm TTBot! How can i help you?
+  - text: Hey there, is there something i can help you with?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_ask_def:
+  - text: what's the term you'd like to ask about?
+  utter_another_def:
+  - text: want an another definition?
+  utter_happy:
+  - text: Great, hope that helped!
+  - text: Is there something else i can help you with?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_def_added:
+  - text: Definition added.
+  utter_ask_term:
+  - text: what's the term you'd like to add.
+  utter_reseau_phy_slots:
+  - text: that was the info for {site}.
+  utter_ask_site:
+  - text: What's the site you're asking about?
+  utter_adding_phy_net:
+  - text: To add a physical network. Please fill this http://localhost:4949
+utter_adding_feature:
+- text: To add a feature. Please fill this http://localhost:4949/feature
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

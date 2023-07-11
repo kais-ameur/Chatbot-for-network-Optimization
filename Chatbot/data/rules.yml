@@ -1,0 +1,68 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Send site 
+  steps:
+  - intent: predict_traffic_ML
+  - action: action_predict_traffic_ML
+
+# - rule: Activate def form
+#   steps:
+#   - intent: ask_help_definition
+#   - action: def_form
+#   - active_loop: def_form
+
+# - rule: Submit def form
+#   condition:
+#   - active_loop: def_form
+#   steps:
+#   - action: def_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_another_def
+#   - action: action_reset_all_slots
+
+# - rule: Activate reseau phy Form
+#   steps:
+#   - intent: ask_for_reseau_phy
+#   - action: reseau_phy_form
+#   - active_loop: reseau_phy_form
+
+# - rule: Submit reseau phy  Form
+#   condition:
+#   - active_loop: reseau_phy_form
+#   steps:
+#   - action: reseau_phy_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_resea_phy_slots
+#   - action: action_reset_all_slots
+
+
+- rule: problem solving
+  steps:
+  - intent: inform_problem
+  - action: action_problem_solve
+
+- rule: guide decision tree
+  steps:
+  - intent: decision_tree
+  - action: action_decision_tree
+
+- rule: choose option
+  steps:
+  - intent: choose_option
+  - action: action_decision_tree

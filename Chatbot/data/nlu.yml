@@ -1,0 +1,239 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+#the intent to give the name of the definition we'd like to know about
+# - intent: give_definition
+#   examples: |
+    # - [](definition)
+    # - what is [tcp](definition)
+    # - what's included in the feature [nir](definition)
+    # - give me the definition of the feature [kpi](definition)
+    # - [uplink](definition)
+    # - [R503](definition)
+    # - [ASGH](definition)
+    # - what is the [FAJ 121 1447](definition)
+    # - [Uplink Adaptive Retransmission Enhancement] (definition) do
+    # - [R503](definition)
+    # - [advanced subscriber group handling-based prescheduling](definition)
+    # - [asgh-based](definition)
+#the intent to ask about a feature or a definition
+- intent: ask_help_definition
+  examples: |
+    - i need the definition for
+    - what's included in the feature 
+    - i need a definition
+    - i need informations of the feature
+    - i want infos on the feature 
+    - can you define something
+    - give me the definition for
+    - i need a def
+    - what's the feature 
+    - what feature have 
+    - features containing
+    - features including
+    - features with 
+    - what's the new feature
+    - i need a feature
+    - tcp
+    - nir
+    - kpi
+    - uplink
+    - R503
+    - ASGH
+    - what is the FAJ 121 1447
+    - what does Uplink Adaptive Retransmission Enhancement do
+    - R503
+    - advanced subscriber group handling-based prescheduling
+#Questions about  reseau phy by ID, name, BSC, fequency, LAC , Latitude , Longitude, HBA, Type d'Installation, azimut du rayonnement maximum dans chaque secteur, sectuers and gouvernorat
+- intent: inform_about_reseau_phy
+  examples: |
+    - i want some infos 
+    - give me infos
+    - i'd like to know about a site
+    - i want information on a site
+    - can i ask about site
+    - Give me sites with the governorate
+    - Give me all sites with this langtitude 
+    - Give me all sites with this langtitude 
+    - what are the sites with azimut du rayonnement
+    - sites with gouvernorat
+    - sites with frequency
+    - sites with LAC
+    - sites with HBA
+    - I'm interested in the informations of a site
+    - what's the infos for HBIRA_GSM
+    - give me all info for MHERZA_EST_GSM
+    - give me all information about MHERZA_EST_GSM
+    - MHERZA_EST_GSM
+    - i want HBIRA_GSM
+    - MAH3321
+    - site with code 33211
+    - site with 33661
+    - what's HBIRA_GSM
+    - MAH3366
+    - GSM900
+    - 47
+    - 33MHEGA
+    - Pylone
+    - LAC 170
+    - Longtitude 35,1704
+    - latitude 10,2292
+    - HBA 27,5
+    - Sites in Mahdia
+
+#help solve a problem intent
+- intent: inform_problem
+  examples: |
+    - check counters
+    - What steps should I follow to diagnose and resolve counter errors
+    - How can I address counter issues or abnormalities
+    - What tools or techniques can I use to debug counter related issues
+    - validate kpis
+    - validate counters
+    - check counters
+    - find solutions to counters
+
+- intent: predict_traffic_ML
+  examples: |
+    - make traffic prediction for [Ain_Boumorra] (site)
+    - predict traffic for [BOUHAJLA_REP] (site)
+    - Can you give me a prediction for the [Ain_Boumorra] (site)
+    - What will traffic look like for [Chrichira] (site)
+    - Can you predict how much traffic it will get in [ElJem] (site)?"
+    
+- lookup: site
+  examples: |
+    - Ain_Boumorra
+    - BOUHAJLA_REP
+    - Chrichira
+
+- intent: Site_Questions
+  examples: |
+    - What site was that
+    - what was that site
+    - that was the prediction for what site
+    - what site
+    
+- intent: Site_Classify_Ask
+  examples: |
+    - what are sites with low profitability
+    - what are the sites with an average profitability
+    - what are sites with a normal profitability
+    - the best cost-effective Sites
+    - sites with a good cost-effective
+    - Can you provide a list of sites that have low profitability?
+    - Which sites have an average profitability
+    - Could you suggest the best cost-effective sites
+    - Do you know any sites that demonstrate good profitability
+    
+- intent: Site_Solution_Ask
+  examples: |
+    - give me solution for [Ain_Boumorra] (site)
+    - What are some strategies to improve [BOUHAJLA_REP] (site)?
+    - How can I optimize the solution [BOUHAJLA_REP] (site)?
+    - What steps can I take to enhance the responsiveness of a [Ain_Boumorra] (site)?
+    - what are the solutions for [BOUHAJLA_REP] (site)
+    - Can you give me a solutions for the [Ain_Boumorra] (site)
+    - What is wrong with [Chrichira] (site)
+    - Can you tell me what's the solution for [ElJem] (site)?"
+    
+- lookup: site
+  examples: |
+    - Ain_Boumorra
+    - BOUHAJLA_REP
+    - Chrichira
+
+- intent: decision_tree
+  examples: |
+    - J'ai un souci de [mobility](decision_tree_type), pouvez-vous m'aider à trouver la cause ?
+    - pouvez-vous m'aider à trouver la cause d'un problème de [mobility](decision_tree_type)?
+    - J'ai un problème de [mobility](decision_tree_type), pouvez-vous m'aider à identifier la source ?
+    - J'ai un problème de [mobility](decision_tree_type), pouvez-vous m'aider à comprendre la raison ?
+    - J'ai un problème de [mobility](decision_tree_type), pouvez-vous m'aider à résoudre la difficulté ?
+    - J'ai un problème de [mobility](decision_tree_type), pouvez-vous m'aider à déterminer l'origine ?
+    - J'ai un problème de [mobility](decision_tree_type), pouvez-vous m'aider à trouver la source du dysfonctionnement ?
+    - J'ai un problème de [mobility](decision_tree_type), pouvez-vous m'aider à comprendre les causes?
+    - problème de [mobility](decision_tree_type)
+    - les causes d'un problème de [mobility](decision_tree_type)
+    - résolution d'un problème de [mobility](decision_tree_type)
+    - plan d'action d'un problème de [mobility](decision_tree_type)
+    - [mobility](decision_tree_type)
+    - j'ai un problème d'[accessibility](decision_tree_type)
+    - comment résoudre un problème d'[accessibility](decision_tree_type)
+    - [accessibility](decision_tree_type)
+    - J'ai un problème d'[accessibility](decision_tree_type), pouvez-vous m'aider à trouver les causes ?
+    - Qu'est-ce qui peut causer des problèmes d'[accessibility](decision_tree_type) ?
+    - Quelles sont les étapes pour identifier les causes de problèmes d'[accessibility](decision_tree_type) ?
+    - J'ai un problème d'[accessibility](decision_tree_type), pouvez-vous me donner un plan d'action ?
+    - Comment peut-on améliorer l'[accessibility](decision_tree_type) ?
+    - Quelles sont les solutions pour résoudre les problèmes d'[accessibility](decision_tree_type) ?
+    - plan d'action pour un problème d'[accessibility](decision_tree_type)
+    - [accessibility](decision_tree_type) action plan
+    - Comment peut-on mettre en place un plan d'action pour améliorer l'[accessibility](decision_tree_type) ?
+    - Qu'est-ce qui peut causer des problèmes de [retainability](decision_tree_type) ?
+    - Je rencontre des difficultés de [retainability](decision_tree_type), pouvez-vous m'aider à comprendre les raisons ?
+    - plan action [retainability](decision_tree_type)
+    - [retainability](decision_tree_type) action plan
+    - [retainability](decision_tree_type) cause de problème
+    - Comment corriger les problèmes de [retainability](decision_tree_type) ?
+    - J'ai besoin d'un plan pour améliorer la [retainability](decision_tree_type) de mon projet, pouvez-vous m'aider ?
+    - J'ai des problèmes de [retainability](decision_tree_type), pouvez-vous me proposer un plan d'action pour améliorer la situation ?
+    - [retainability](decision_tree_type)
+    - [integrity](decision_tree_type)
+    - cause prob d'[integrity](decision_tree_type)
+    - plan action prob [integrity](decision_tree_type)
+    - J'ai un souci d'[integrity](decision_tree_type), comment puis-je y remédier ?
+    - Je rencontre des difficultés avec l'[integrity](decision_tree_type), pouvez-vous m'aider à comprendre les raisons ?
+    - Comment corriger les problèmes d'[integrity](decision_tree_type)
+    - J'ai un problème de [integrity](decision_tree_type), pouvez-vous me proposer un plan d'action pour le résoudre ?
+    - J'ai un problème de [integrity](decision_tree_type), pouvez-vous me suggérer un plan d'action pour améliorer mes résultats ?
+    - J'ai un problème de [integrity](decision_tree_type), pouvez-vous me recommander un plan d'action pour renforcer la [mobility](decision_tree_type) ?
